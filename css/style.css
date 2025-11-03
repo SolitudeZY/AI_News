@@ -592,3 +592,119 @@ body {
 .pdf-status-message.info {
     background: linear-gradient(135deg, #2563eb, #1d4ed8);
 }
+
+/* News Detail Modal Styles */
+.news-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+}
+
+.news-modal-content {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 30px;
+    width: 90%;
+    max-width: 800px;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: var(--shadow);
+    position: relative;
+    animation: fadeIn 0.3s ease-out;
+}
+
+.news-modal-content .close-button {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--text-secondary);
+    transition: color 0.2s ease;
+}
+
+.news-modal-content .close-button:hover {
+    color: var(--primary-color);
+}
+
+.news-modal-content h2 {
+    font-size: 1.8rem;
+    color: var(--text-primary);
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+
+.news-modal-content .modal-news-meta {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.news-modal-content .modal-news-image {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.news-modal-content .modal-news-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+.news-modal-content .modal-news-summary {
+    font-size: 1.1rem;
+    color: var(--text-primary);
+    line-height: 1.6;
+    margin-bottom: 20px;
+    padding: 15px;
+    background: rgba(var(--primary-color-rgb), 0.05);
+    border-left: 4px solid var(--primary-color);
+    border-radius: 8px;
+}
+
+.news-modal-content .modal-news-full-content p {
+    margin-bottom: 1em;
+    line-height: 1.7;
+    color: var(--text-primary);
+}
+
+.news-modal-content .view-original-btn {
+    margin-top: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+    .news-modal-content {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .news-modal-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .news-modal-content .close-button {
+        font-size: 1.5rem;
+        top: 10px;
+        right: 15px;
+    }
+}

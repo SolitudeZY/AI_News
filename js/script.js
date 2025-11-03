@@ -97,33 +97,20 @@ async function loadNewsData() {
             renderNewsContent();
             updateChart();
             
-            // 如果是本地模式，也保存一份到浏览器存储作为备份
-            saveDataToBrowserStorage(data);
-            
             logError('新闻数据加载成功');
             break;
         } catch (error) {
             retries--;
             if (retries === 0) {
                 logError(`加载新闻数据失败: ${error.message}`);
-                // 尝试从浏览器存储加载
-                const storedData = localStorage.getItem('newsData');
-                if (storedData) {
-                    newsData = JSON.parse(storedData);
-                    updateStatistics();
-                    renderNewsContent();
-                    updateChart();
-                    logError('已从浏览器存储恢复数据');
-                } else {
-                    document.getElementById('newsContent').innerHTML = `
-                        <div style="text-align: center; padding: 40px; color: var(--text-secondary);">
-                            <i class="fas fa-exclamation-triangle" style="font-size: 3rem; margin-bottom: 20px;"></i>
-                            <p>加载新闻数据失败</p>
-                            <p style="font-size: 0.9rem; margin-top: 10px;">${error.message}</p>
-                            <button onclick="loadNewsData()" style="margin-top: 15px; padding: 8px 16px; background: var(--primary-color); color: white; border: none; border-radius: 4px; cursor: pointer;">重试</button>
-                        </div>
-                    `;
-                }
+                document.getElementById('newsContent').innerHTML = `
+                    <div style="text-align: center; padding: 40px; color: var(--text-secondary);">
+                        <i class="fas fa-exclamation-triangle" style="font-size: 3rem; margin-bottom: 20px;"></i>
+                        <p>加载新闻数据失败</p>
+                        <p style="font-size: 0.9rem; margin-top: 10px;">${error.message}</p>
+                        <button onclick="loadNewsData()" style="margin-top: 15px; padding: 8px 16px; background: var(--primary-color); color: white; border: none; border-radius: 4px; cursor: pointer;">重试</button>
+                    </div>
+                `;
             } else {
                 logError(`加载新闻数据失败，剩余重试次数: ${retries}`);
                 await new Promise(resolve => setTimeout(resolve, 1000));
@@ -225,12 +212,18 @@ function renderNewsContent() {
                 <h2>${category}</h2>
                 ${categories[category].map(item => `
                     <div class="news-item">
-                        <div class="news-title">${item.title}</div>
+                        <div class="news-header">
+                            <div class="news-title" onclick="openNewsDetailModal('${item.id}')">${item.title}</div>
+                            <button class="toggle-details-btn" onclick="toggleNewsDetails(this)">展开</button>
+                        </div>
                         <div class="news-meta">
                             <span class="news-source">${getSourceName(item.source)}</span>
                             <span class="news-time">${formatTime(item.published)}</span>
                         </div>
-                        <a href="${item.link}" target="_blank" class="view-original-btn">查看原文</a>
+                        <div class="news-summary">${item.summary || (item.description ? item.description.substring(0, 150) + '...' : '')}</div>
+                        <div class="news-details" style="display: none;">
+                            <a href="${item.link}" target="_blank" class="view-original-btn">查看原文</a>
+                        </div>
                     </div>
                 `).join('')}
             </div>
@@ -239,6 +232,61 @@ function renderNewsContent() {
 
     newsContent.innerHTML = html;
 }
+
+function toggleNewsDetails(button) {
+    const newsItem = button.closest('.news-item');
+    const details = newsItem.querySelector('.news-details');
+    if (details.style.display === 'none') {
+        details.style.display = 'block';
+        button.textContent = '收起';
+    } else {
+        details.style.display = 'none';
+        button.textContent = '展开';
+    }
+}
+
+function openNewsDetailModal(newsId) {
+    const newsData = window.currentNewsData.find(news => news.id === newsId);
+    if (!newsData) {
+        console.error('News data not found for ID:', newsId);
+        return;
+    }
+
+    const modal = document.getElementById('newsDetailModal');
+    document.getElementById('modal-news-title').textContent = newsData.title;
+    document.getElementById('modal-news-source').textContent = newsData.source;
+    document.getElementById('modal-news-time').textContent = newsData.pubDate;
+    
+    const modalImage = document.getElementById('modal-news-image');
+    if (newsData.image) {
+        modalImage.src = newsData.image;
+        modalImage.style.display = 'block';
+    } else {
+        modalImage.style.display = 'none';
+    }
+
+    document.getElementById('modal-news-summary').textContent = newsData.summary;
+    document.getElementById('modal-news-full-content').innerHTML = newsData.fullContent || '暂无详细内容。';
+    document.getElementById('modal-news-original-link').href = newsData.link;
+
+    modal.style.display = 'block';
+    document.body.classList.add('modal-open'); // Prevent scrolling background
+}
+
+function closeNewsDetailModal() {
+    const modal = document.getElementById('newsDetailModal');
+    modal.style.display = 'none';
+    document.body.classList.remove('modal-open');
+}
+
+// Add event listener to close button
+document.addEventListener('DOMContentLoaded', () => {
+    const closeButton = document.querySelector('.news-detail-modal .close-button');
+    if (closeButton) {
+        closeButton.addEventListener('click', closeNewsDetailModal);
+    }
+    // ... existing code ...
+});
 
 // 获取新闻源名称
 function getSourceName(sourceUrl) {
@@ -483,20 +531,46 @@ async function loadNewsData(jsonPath) {
     document.getElementById('wordcloudImage').innerHTML = '<p>词云正在生成中...</p>';
 
 
+<<<<<<< Updated upstream
     try {
         console.log('正在加载的新闻数据路径:', jsonPath); // 新增日志查看路径
         const response = await fetch(jsonPath);
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
+=======
+    let retries = 3;
+    
+    while (retries > 0) {
+        try {
+            console.log('正在加载的新闻数据路径:', jsonPath); // 新增日志查看路径
+            const response = await fetch(jsonPath);
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            const data = await response.json();
+            renderDashboard(data);
+            logError('新闻数据加载成功');
+            break;
+        } catch (error) {
+            retries--;
+            if (retries === 0) {
+                logError(`加载新闻数据失败: ${error.message}`);
+                document.getElementById('newsContent').innerHTML = `
+                    <div style="text-align: center; padding: 40px; color: var(--text-secondary);">
+                        <i class="fas fa-exclamation-triangle" style="font-size: 3rem; margin-bottom: 20px;"></i>
+                        <p>加载新闻数据失败</p>
+                        <p style="font-size: 0.9rem; margin-top: 10px;">${error.message}</p>
+                        <button onclick="loadNewsData()" style="margin-top: 15px; padding: 8px 16px; background: var(--primary-color); color: white; border: none; border-radius: 4px; cursor: pointer;">重试</button>
+                    </div>
+                `;
+            } else {
+                logError(`加载新闻数据失败，剩余重试次数: ${retries}`);
+                await new Promise(resolve => setTimeout(resolve, 1000));
+            }
+>>>>>>> Stashed changes
         }
-        const data = await response.json();
-        renderDashboard(data);
-    } catch (error) {
-        console.error('加载新闻数据失败:', error);
-        document.getElementById('newsContent').innerHTML = '<p>加载新闻数据失败，请检查控制台。</p>';
-    } finally {
-        document.getElementById('loading').style.display = 'none';
     }
+    document.getElementById('loading').style.display = 'none';
 }
 
 // 渲染仪表板
