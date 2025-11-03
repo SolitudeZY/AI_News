@@ -31,116 +31,12 @@ function initTheme() {
 let newsData = [];
 let categoryStats = {};
 
-// 从浏览器存储加载数据
-async function loadDataFromBrowserStorage() {
-    document.getElementById('loading').style.display = 'block';
-    
-    try {
-        // 从localStorage加载新闻数据
-        const storedData = localStorage.getItem('newsData');
-        if (storedData) {
-            const data = JSON.parse(storedData);
-            
-            // 处理两种数据格式：数组或包含news数组的对象
-            if (Array.isArray(data)) {
-                newsData = data;
-            } else if (data && Array.isArray(data.news)) {
-                newsData = data.news;
-            } else {
-                throw new Error('无效的数据格式');
-            }
-            
-            updateStatistics();
-            renderNewsContent();
-            updateChart();
-            logError('从浏览器存储加载新闻数据成功');
-        } else {
-            // 如果没有浏览器存储的数据，则尝试直接从news_data.json加载
-            try {
-                const response = await fetch('news_data.json');
-                if (response.ok) {
-                    const data = await response.json();
-                    
-                    // 处理两种数据格式
-                    if (Array.isArray(data)) {
-                        newsData = data;
-                    } else if (data && Array.isArray(data.news)) {
-                        newsData = data.news;
-                    } else {
-                        throw new Error('无效的数据格式');
-                    }
-                    
-                    updateStatistics();
-                    renderNewsContent();
-                    updateChart();
-                    
-                    // 保存到浏览器存储
-                    saveDataToBrowserStorage(data);
-                    logError('从本地加载新闻数据并保存到浏览器存储成功');
-                } else {
-                    throw new Error(`HTTP error! status: ${response.status}`);
-                }
-            } catch (error) {
-                logError(`从本地加载新闻数据失败: ${error.message}`);
-                document.getElementById('newsContent').innerHTML = `
-                    <div style="text-align: center; padding: 40px; color: var(--text-secondary);">
-                        <i class="fas fa-exclamation-triangle" style="font-size: 3rem; margin-bottom: 20px;"></i>
-                        <p>加载新闻数据失败</p>
-                        <p style="font-size: 0.9rem; margin-top: 10px;">${error.message}</p>
-                        <button onclick="loadDataFromBrowserStorage()" style="margin-top: 15px; padding: 8px 16px; background: var(--primary-color); color: white; border: none; border-radius: 4px; cursor: pointer;">重试</button>
-                    </div>
-                `;
-            }
-        }
-        
-        // 从localStorage加载词云数据
-        const storedWordcloud = localStorage.getItem('wordcloudData');
-        if (storedWordcloud) {
-            const wordcloudImage = document.getElementById('wordcloudImage');
-            wordcloudImage.innerHTML = storedWordcloud;
-            logError('从浏览器存储加载词云成功');
-        } else {
-            // 如果没有浏览器存储的词云，则从本地加载
-            loadWordcloud();
-        }
-    } catch (error) {
-        logError(`从浏览器存储加载数据失败: ${error.message}`);
-        // 回退到本地存储
-        await loadNewsData();
-        loadWordcloud();
-    }
-    
-    document.getElementById('loading').style.display = 'none';
-}
-
-// 保存数据到浏览器存储
-function saveDataToBrowserStorage(data, wordcloudHtml) {
-    try {
-        localStorage.setItem('newsData', JSON.stringify(data));
-        if (wordcloudHtml) {
-            localStorage.setItem('wordcloudData', wordcloudHtml);
-        }
-        logError('数据已保存到浏览器存储');
-    } catch (error) {
-        logError(`保存到浏览器存储失败: ${error.message}`);
-    }
-}
-
 // 加载AI总结
 async function loadAISummary() {
     const summaryElement = document.getElementById('aiSummaryContent');
     if (!summaryElement) return;
     
     try {
-        // 首先尝试从浏览器存储加载
-        const storedSummary = localStorage.getItem('aiSummary');
-        if (storedSummary) {
-            summaryElement.innerHTML = `<p>${storedSummary}</p>`;
-            logError('从浏览器存储加载AI总结成功');
-            return;
-        }
-        
-        // 如果没有浏览器存储，则从JSON文件加载
         const response = await fetch('news_data.json');
         if (response.ok) {
             const data = await response.json();
@@ -158,9 +54,7 @@ async function loadAISummary() {
             // 更新显示
             summaryElement.innerHTML = `<p>${summary}</p>`;
             
-            // 保存到浏览器存储
-            localStorage.setItem('aiSummary', summary);
-            logError('从本地加载AI总结并保存到浏览器存储成功');
+            logError('从本地加载AI总结成功');
         } else {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
@@ -254,22 +148,6 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // 绑定词云刷新按钮事件
     document.getElementById('refreshWordcloud').addEventListener('click', refreshWordcloud);
-    
-    // 绑定存储选择变化事件
-    document.getElementById('storageSelect').addEventListener('change', function() {
-        // 设置存储模式并重新加载数据
-        const storageMode = this.value;
-        localStorage.setItem('newsDashboardStorageMode', storageMode);
-        
-        // 清除现有数据并重新加载所有内容
-        localStorage.removeItem('newsData');
-        localStorage.removeItem('aiSummary');
-        localStorage.removeItem('wordcloudData');
-        
-        loadNewsData();
-        loadAISummary();
-        loadWordcloud();
-    });
     
     // 设置初始存储模式
     const storageSelect = document.getElementById('storageSelect');
@@ -606,7 +484,6 @@ async function loadNewsData(jsonPath) {
 
 
     try {
-        // ... existing code ...
         console.log('正在加载的新闻数据路径:', jsonPath); // 新增日志查看路径
         const response = await fetch(jsonPath);
         if (!response.ok) {
