@@ -1,0 +1,594 @@
+/* CSS变量定义 */
+:root {
+    --primary-color: #2563eb;
+    --secondary-color: #64748b;
+    --background: #ffffff;
+    --card-bg: #ffffff;
+    --text-primary: #1e293b;
+    --text-secondary: #64748b;
+    --border-color: #e2e8f0;
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+[data-theme="dark"] {
+    --primary-color: #3b82f6;
+    --secondary-color: #94a3b8;
+    --background: #0f172a;
+    --card-bg: #1e293b;
+    --text-primary: #f1f5f9;
+    --text-secondary: #cbd5e1;
+    --border-color: #334155;
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+}
+
+/* 基础样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--background);
+    color: var(--text-primary);
+    line-height: 1.6;
+    transition: all 0.3s ease;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* 头部样式 */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.header h1 i {
+    color: var(--primary-color);
+    margin-right: 10px;
+}
+
+/* 控制按钮样式 */
+.controls {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.refresh-btn, .theme-toggle, .wordcloud-refresh {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 10px 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    color: var(--text-primary);
+    box-shadow: var(--shadow);
+}
+
+/* 优化查看原文按钮样式 */
+.view-original-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient(135deg, var(--primary-color), #1d4ed8);
+    border: none;
+    border-radius: 12px;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    font-weight: 600;
+    color: white;
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.view-original-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.6s ease;
+}
+
+.view-original-btn:hover {
+     background: linear-gradient(135deg, #1d4ed8, var(--primary-color));
+     transform: translateY(-2px);
+     box-shadow: 0 8px 25px rgba(37, 99, 235, 0.4);
+ }
+ 
+ .view-original-btn:hover::before {
+     left: 100%;
+ }
+
+ .view-original-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 10px rgba(37, 99, 235, 0.3);
+    transition: all 0.1s ease;
+}
+
+/* 暗色主题下的查看原文按钮样式 */
+[data-theme="dark"] .view-original-btn {
+    background: linear-gradient(135deg, var(--primary-color), #1e40af);
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+}
+
+[data-theme="dark"] .view-original-btn:hover {
+    background: linear-gradient(135deg, #1e40af, var(--primary-color));
+    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.4);
+}
+
+.refresh-btn:hover, .theme-toggle:hover, .view-original:hover, .wordcloud-refresh:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: translateY(-1px);
+}
+
+.refresh-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.refresh-btn:disabled:hover {
+    background: var(--card-bg);
+    color: var(--text-primary);
+}
+
+/* 夜间模式按钮样式调整 */
+.theme-toggle {
+    border-radius: 8px;
+    padding: 10px 16px;
+    font-size: 0.9rem;
+    min-width: auto;
+}
+
+/* 选择器样式 */
+.history-select, .storage-select {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 10px 16px;
+    color: var(--text-primary);
+    cursor: pointer;
+    font-weight: 500;
+    box-shadow: var(--shadow);
+    min-width: 120px;
+}
+
+.history-select:focus, .storage-select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+/* 加载状态 */
+.loading {
+    display: none;
+    text-align: center;
+    padding: 20px;
+    color: var(--text-secondary);
+}
+
+.loading i {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* 仪表板网格布局 */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+/* 新闻内容区域 */
+.news-content {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: var(--shadow);
+}
+
+.news-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: var(--text-primary);
+}
+
+.news-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.news-item {
+    background: var(--background);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.news-item:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
+}
+
+.news-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 12px;
+}
+
+.news-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    line-height: 1.4;
+    flex: 1;
+    margin-right: 15px;
+}
+
+.news-source {
+    background: var(--primary-color);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.news-meta {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 12px;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.news-summary {
+    color: var(--text-secondary);
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.news-keywords {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.keyword {
+    background: var(--secondary-color);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+
+/* 侧边栏样式 */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.stats-card, .chart-card {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: var(--shadow);
+}
+
+.stats-card h3, .chart-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: var(--text-primary);
+}
+
+.stat-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.stat-item:last-child {
+    border-bottom: none;
+}
+
+.stat-value {
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.chart-container {
+    height: 240px;
+    position: relative;
+}
+
+.chart-container.large {
+    height: 300px;
+}
+
+.chart-legend-container {
+    max-height: 120px;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.outline-toggle {
+    background: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    margin-bottom: 10px;
+    align-self: flex-end;
+}
+
+.outline-toggle:hover {
+    background: var(--primary-color);
+    transform: translateY(-1px);
+}
+
+.chart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.chart-container {
+    height: 200px;
+    position: relative;
+}
+
+/* AI总结展示区域样式 */
+.ai-summary-card {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: var(--shadow);
+    margin-bottom: 30px;
+    border-left: 4px solid var(--primary-color);
+}
+
+.ai-summary-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.ai-summary-header h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.ai-summary-header h2 i {
+    color: var(--primary-color);
+    margin-right: 10px;
+}
+
+.refresh-summary-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    color: var(--text-primary);
+    box-shadow: var(--shadow);
+    font-size: 0.9rem;
+}
+
+.refresh-summary-btn:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: translateY(-1px);
+}
+
+.ai-summary-content {
+    color: var(--text-primary);
+    line-height: 1.7;
+    font-size: 1rem;
+    background: rgba(37, 99, 235, 0.05);
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
+.ai-summary-content p {
+    margin: 0;
+}
+
+/* 暗色主题下的AI总结样式 */
+[data-theme="dark"] .ai-summary-content {
+    background: rgba(59, 130, 246, 0.1);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .header {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+    
+    .controls {
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    .news-content, .stats-card, .chart-card {
+        padding: 20px;
+    }
+    
+    .theme-toggle {
+        font-size: 0.8rem;
+        padding: 8px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+    
+    .header h1 {
+        font-size: 1.5rem;
+    }
+    
+    .news-item {
+        padding: 15px;
+    }
+    
+    .theme-toggle {
+        font-size: 0.75rem;
+        padding: 6px 10px;
+    }
+    
+    .save-pdf-btn {
+        font-size: 0.75rem;
+        padding: 6px 10px;
+    }
+}
+
+/* 保存为PDF按钮样式 */
+.save-pdf-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient(135deg, #dc2626, #b91c1c);
+    border: none;
+    border-radius: 8px;
+    padding: 10px 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    color: white;
+    box-shadow: var(--shadow);
+    position: relative;
+    overflow: hidden;
+}
+
+.save-pdf-btn:hover {
+    background: linear-gradient(135deg, #b91c1c, #991b1b);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(220, 38, 38, 0.3);
+}
+
+.save-pdf-btn:active {
+    transform: translateY(0);
+}
+
+.save-pdf-btn.loading {
+    background: linear-gradient(135deg, #94a3b8, #64748b);
+    cursor: not-allowed;
+}
+
+.save-pdf-btn.loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin: -10px 0 0 -10px;
+    border: 2px solid transparent;
+    border-top: 2px solid white;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+.save-pdf-btn.success {
+    background: linear-gradient(135deg, #16a34a, #15803d);
+}
+
+.save-pdf-btn.error {
+    background: linear-gradient(135deg, #dc2626, #b91c1c);
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* 状态提示消息 */
+.pdf-status-message {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 12px 20px;
+    border-radius: 8px;
+    color: white;
+    font-weight: 500;
+    z-index: 1000;
+    box-shadow: var(--shadow);
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+}
+
+.pdf-status-message.show {
+    transform: translateX(0);
+}
+
+.pdf-status-message.success {
+    background: linear-gradient(135deg, #16a34a, #15803d);
+}
+
+.pdf-status-message.error {
+    background: linear-gradient(135deg, #dc2626, #b91c1c);
+}
+
+.pdf-status-message.info {
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+}

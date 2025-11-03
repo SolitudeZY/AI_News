@@ -1,0 +1,1211 @@
+[2025-10-30 18:04:39] 开始测试新闻源可用性...
+[2025-10-30 18:04:39] 测试新闻源: http://www.people.com.cn/rss/politics.xml
+[2025-10-30 18:04:39] 尝试 1/3: 抓取 http://www.people.com.cn/rss/politics.xml
+[2025-10-30 18:04:39] 尝试 1 失败: http://www.people.com.cn/rss/politics.xml - 错误: RSS解析错误: document declared as us-ascii, but parsed as utf-8
+[2025-10-30 18:04:39] 2秒后重试...
+[2025-10-30 18:04:41] 尝试 2/3: 抓取 http://www.people.com.cn/rss/politics.xml
+[2025-10-30 18:04:41] 尝试 2 失败: http://www.people.com.cn/rss/politics.xml - 错误: RSS解析错误: document declared as us-ascii, but parsed as utf-8
+[2025-10-30 18:04:41] 2秒后重试...
+[2025-10-30 18:04:43] 尝试 3/3: 抓取 http://www.people.com.cn/rss/politics.xml
+[2025-10-30 18:04:43] 尝试 3 失败: http://www.people.com.cn/rss/politics.xml - 错误: RSS解析错误: document declared as us-ascii, but parsed as utf-8
+[2025-10-30 18:04:43] http://www.people.com.cn/rss/politics.xml: 经过3次尝试后仍然失败
+[2025-10-30 18:04:43] 测试新闻源: http://www.xinhuanet.com/rss/world.xml
+[2025-10-30 18:04:43] 尝试 1/3: 抓取 http://www.xinhuanet.com/rss/world.xml
+[2025-10-30 18:04:44] 尝试 1 失败: http://www.xinhuanet.com/rss/world.xml - 错误: RSS解析错误: <unknown>:45:43: mismatched tag
+[2025-10-30 18:04:44] 2秒后重试...
+[2025-10-30 18:04:46] 尝试 2/3: 抓取 http://www.xinhuanet.com/rss/world.xml
+[2025-10-30 18:04:46] 尝试 2 失败: http://www.xinhuanet.com/rss/world.xml - 错误: RSS解析错误: <unknown>:45:43: mismatched tag
+[2025-10-30 18:04:46] 2秒后重试...
+[2025-10-30 18:04:48] 尝试 3/3: 抓取 http://www.xinhuanet.com/rss/world.xml
+[2025-10-30 18:04:48] 尝试 3 失败: http://www.xinhuanet.com/rss/world.xml - 错误: RSS解析错误: <unknown>:45:43: mismatched tag
+[2025-10-30 18:04:48] http://www.xinhuanet.com/rss/world.xml: 经过3次尝试后仍然失败
+[2025-10-30 18:04:48] 测试新闻源: https://rss.cnki.net/rss/1
+[2025-10-30 18:04:48] 尝试 1/3: 抓取 https://rss.cnki.net/rss/1
+[2025-10-30 18:04:49] 尝试 1 失败: https://rss.cnki.net/rss/1 - 错误: RSS解析错误: <unknown>:15:50: undefined entity
+[2025-10-30 18:04:49] 2秒后重试...
+[2025-10-30 18:04:51] 尝试 2/3: 抓取 https://rss.cnki.net/rss/1
+[2025-10-30 18:04:52] 尝试 2 失败: https://rss.cnki.net/rss/1 - 错误: RSS解析错误: <unknown>:15:50: undefined entity
+[2025-10-30 18:04:52] 2秒后重试...
+[2025-10-30 18:04:54] 尝试 3/3: 抓取 https://rss.cnki.net/rss/1
+[2025-10-30 18:04:54] 尝试 3 失败: https://rss.cnki.net/rss/1 - 错误: RSS解析错误: <unknown>:15:50: undefined entity
+[2025-10-30 18:04:54] https://rss.cnki.net/rss/1: 经过3次尝试后仍然失败
+[2025-10-30 18:04:54] 测试新闻源: https://www.36kr.com/feed
+[2025-10-30 18:04:54] 尝试 1/3: 抓取 https://www.36kr.com/feed
+[2025-10-30 18:04:55] https://www.36kr.com/feed: 成功获取10条相关新闻
+[2025-10-30 18:04:55] 测试新闻源: https://rss.cnn.com/rss/edition.rss
+[2025-10-30 18:04:55] 尝试 1/3: 抓取 https://rss.cnn.com/rss/edition.rss
+[2025-10-30 18:04:55] 尝试 1 失败: https://rss.cnn.com/rss/edition.rss - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:04:55] 2秒后重试...
+[2025-10-30 18:04:57] 尝试 2/3: 抓取 https://rss.cnn.com/rss/edition.rss
+[2025-10-30 18:04:58] 尝试 2 失败: https://rss.cnn.com/rss/edition.rss - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:04:58] 2秒后重试...
+[2025-10-30 18:05:00] 尝试 3/3: 抓取 https://rss.cnn.com/rss/edition.rss
+[2025-10-30 18:05:00] 尝试 3 失败: https://rss.cnn.com/rss/edition.rss - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:05:00] https://rss.cnn.com/rss/edition.rss: 经过3次尝试后仍然失败
+[2025-10-30 18:05:00] 测试新闻源: http://feeds.reuters.com/reuters/topNews
+[2025-10-30 18:05:00] 尝试 1/3: 抓取 http://feeds.reuters.com/reuters/topNews
+[2025-10-30 18:05:00] http://feeds.reuters.com/reuters/topNews: 成功获取0条相关新闻
+[2025-10-30 18:05:00] 测试新闻源: https://feeds.bbci.co.uk/news/rss.xml
+[2025-10-30 18:05:00] 尝试 1/3: 抓取 https://feeds.bbci.co.uk/news/rss.xml
+[2025-10-30 18:05:00] https://feeds.bbci.co.uk/news/rss.xml: 成功获取4条相关新闻
+[2025-10-30 18:05:00] 测试新闻源: https://techcrunch.com/feed/
+[2025-10-30 18:05:00] 尝试 1/3: 抓取 https://techcrunch.com/feed/
+[2025-10-30 18:05:00] https://techcrunch.com/feed/: 成功获取8条相关新闻
+[2025-10-30 18:05:00] 测试新闻源: https://www.wired.com/feed/rss
+[2025-10-30 18:05:00] 尝试 1/3: 抓取 https://www.wired.com/feed/rss
+[2025-10-30 18:05:01] https://www.wired.com/feed/rss: 成功获取12条相关新闻
+[2025-10-30 18:05:01] 测试新闻源: https://feeds.bloomberg.com/news/rss
+[2025-10-30 18:05:01] 尝试 1/3: 抓取 https://feeds.bloomberg.com/news/rss
+[2025-10-30 18:05:02] 尝试 1 失败: https://feeds.bloomberg.com/news/rss - 错误: RSS解析错误: <unknown>:7:2: mismatched tag
+[2025-10-30 18:05:02] 2秒后重试...
+[2025-10-30 18:05:04] 尝试 2/3: 抓取 https://feeds.bloomberg.com/news/rss
+[2025-10-30 18:05:04] 尝试 2 失败: https://feeds.bloomberg.com/news/rss - 错误: RSS解析错误: <unknown>:7:2: mismatched tag
+[2025-10-30 18:05:04] 2秒后重试...
+[2025-10-30 18:05:06] 尝试 3/3: 抓取 https://feeds.bloomberg.com/news/rss
+[2025-10-30 18:05:07] 尝试 3 失败: https://feeds.bloomberg.com/news/rss - 错误: RSS解析错误: <unknown>:7:2: mismatched tag
+[2025-10-30 18:05:07] https://feeds.bloomberg.com/news/rss: 经过3次尝试后仍然失败
+[2025-10-30 18:05:07] 测试新闻源: https://www.ft.com/rss/home
+[2025-10-30 18:05:07] 尝试 1/3: 抓取 https://www.ft.com/rss/home
+[2025-10-30 18:05:08] https://www.ft.com/rss/home: 成功获取1条相关新闻
+[2025-10-30 18:05:08] 测试新闻源: https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml
+[2025-10-30 18:05:08] 尝试 1/3: 抓取 https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml
+[2025-10-30 18:05:09] https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml: 成功获取6条相关新闻
+[2025-10-30 18:05:09] 测试新闻源: https://feeds.npr.org/1001/rss.xml
+[2025-10-30 18:05:09] 尝试 1/3: 抓取 https://feeds.npr.org/1001/rss.xml
+[2025-10-30 18:05:09] https://feeds.npr.org/1001/rss.xml: 成功获取0条相关新闻
+[2025-10-30 18:05:09] 新闻源可用性测试报告
+==================================================
+http://www.people.com.cn/rss/politics.xml: 失败 (获取0条新闻)
+http://www.xinhuanet.com/rss/world.xml: 失败 (获取0条新闻)
+https://rss.cnki.net/rss/1: 失败 (获取0条新闻)
+https://www.36kr.com/feed: 成功 (获取10条新闻)
+https://rss.cnn.com/rss/edition.rss: 失败 (获取0条新闻)
+http://feeds.reuters.com/reuters/topNews: 失败 (获取0条新闻)
+https://feeds.bbci.co.uk/news/rss.xml: 成功 (获取4条新闻)
+https://techcrunch.com/feed/: 成功 (获取8条新闻)
+https://www.wired.com/feed/rss: 成功 (获取12条新闻)
+https://feeds.bloomberg.com/news/rss: 失败 (获取0条新闻)
+https://www.ft.com/rss/home: 成功 (获取1条新闻)
+https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml: 成功 (获取6条新闻)
+https://feeds.npr.org/1001/rss.xml: 失败 (获取0条新闻)
+
+总计: 6/13 个新闻源可用
+[2025-10-30 18:05:09] 开始抓取新闻...
+[2025-10-30 18:05:09] 正在抓取: http://www.people.com.cn/rss/politics.xml
+[2025-10-30 18:05:09] 尝试 1/3: 抓取 http://www.people.com.cn/rss/politics.xml
+[2025-10-30 18:05:10] 尝试 1 失败: http://www.people.com.cn/rss/politics.xml - 错误: RSS解析错误: document declared as us-ascii, but parsed as utf-8
+[2025-10-30 18:05:10] 2秒后重试...
+[2025-10-30 18:05:12] 尝试 2/3: 抓取 http://www.people.com.cn/rss/politics.xml
+[2025-10-30 18:05:12] 尝试 2 失败: http://www.people.com.cn/rss/politics.xml - 错误: RSS解析错误: document declared as us-ascii, but parsed as utf-8
+[2025-10-30 18:05:12] 2秒后重试...
+[2025-10-30 18:05:14] 尝试 3/3: 抓取 http://www.people.com.cn/rss/politics.xml
+[2025-10-30 18:05:14] 尝试 3 失败: http://www.people.com.cn/rss/politics.xml - 错误: RSS解析错误: document declared as us-ascii, but parsed as utf-8
+[2025-10-30 18:05:14] http://www.people.com.cn/rss/politics.xml: 经过3次尝试后仍然失败
+[2025-10-30 18:05:14] 正在抓取: http://www.xinhuanet.com/rss/world.xml
+[2025-10-30 18:05:14] 尝试 1/3: 抓取 http://www.xinhuanet.com/rss/world.xml
+[2025-10-30 18:05:14] 尝试 1 失败: http://www.xinhuanet.com/rss/world.xml - 错误: RSS解析错误: <unknown>:45:43: mismatched tag
+[2025-10-30 18:05:14] 2秒后重试...
+[2025-10-30 18:05:16] 尝试 2/3: 抓取 http://www.xinhuanet.com/rss/world.xml
+[2025-10-30 18:05:16] 尝试 2 失败: http://www.xinhuanet.com/rss/world.xml - 错误: RSS解析错误: <unknown>:45:43: mismatched tag
+[2025-10-30 18:05:16] 2秒后重试...
+[2025-10-30 18:05:18] 尝试 3/3: 抓取 http://www.xinhuanet.com/rss/world.xml
+[2025-10-30 18:05:18] 尝试 3 失败: http://www.xinhuanet.com/rss/world.xml - 错误: RSS解析错误: <unknown>:45:43: mismatched tag
+[2025-10-30 18:05:18] http://www.xinhuanet.com/rss/world.xml: 经过3次尝试后仍然失败
+[2025-10-30 18:05:18] 正在抓取: https://rss.cnki.net/rss/1
+[2025-10-30 18:05:18] 尝试 1/3: 抓取 https://rss.cnki.net/rss/1
+[2025-10-30 18:05:20] 尝试 1 失败: https://rss.cnki.net/rss/1 - 错误: RSS解析错误: <unknown>:15:50: undefined entity
+[2025-10-30 18:05:20] 2秒后重试...
+[2025-10-30 18:05:22] 尝试 2/3: 抓取 https://rss.cnki.net/rss/1
+[2025-10-30 18:05:22] 尝试 2 失败: https://rss.cnki.net/rss/1 - 错误: RSS解析错误: <unknown>:15:50: undefined entity
+[2025-10-30 18:05:22] 2秒后重试...
+[2025-10-30 18:05:24] 尝试 3/3: 抓取 https://rss.cnki.net/rss/1
+[2025-10-30 18:05:25] 尝试 3 失败: https://rss.cnki.net/rss/1 - 错误: RSS解析错误: <unknown>:15:50: undefined entity
+[2025-10-30 18:05:25] https://rss.cnki.net/rss/1: 经过3次尝试后仍然失败
+[2025-10-30 18:05:25] 正在抓取: https://www.36kr.com/feed
+[2025-10-30 18:05:25] 尝试 1/3: 抓取 https://www.36kr.com/feed
+[2025-10-30 18:05:26] https://www.36kr.com/feed: 成功获取10条相关新闻
+[2025-10-30 18:05:26] 正在抓取: https://rss.cnn.com/rss/edition.rss
+[2025-10-30 18:05:26] 尝试 1/3: 抓取 https://rss.cnn.com/rss/edition.rss
+[2025-10-30 18:05:26] 尝试 1 失败: https://rss.cnn.com/rss/edition.rss - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:05:26] 2秒后重试...
+[2025-10-30 18:05:28] 尝试 2/3: 抓取 https://rss.cnn.com/rss/edition.rss
+[2025-10-30 18:05:28] 尝试 2 失败: https://rss.cnn.com/rss/edition.rss - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:05:28] 2秒后重试...
+[2025-10-30 18:05:30] 尝试 3/3: 抓取 https://rss.cnn.com/rss/edition.rss
+[2025-10-30 18:05:31] 尝试 3 失败: https://rss.cnn.com/rss/edition.rss - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:05:31] https://rss.cnn.com/rss/edition.rss: 经过3次尝试后仍然失败
+[2025-10-30 18:05:31] 正在抓取: http://feeds.reuters.com/reuters/topNews
+[2025-10-30 18:05:31] 尝试 1/3: 抓取 http://feeds.reuters.com/reuters/topNews
+[2025-10-30 18:05:31] http://feeds.reuters.com/reuters/topNews: 成功获取0条相关新闻
+[2025-10-30 18:05:31] 正在抓取: https://feeds.bbci.co.uk/news/rss.xml
+[2025-10-30 18:05:31] 尝试 1/3: 抓取 https://feeds.bbci.co.uk/news/rss.xml
+[2025-10-30 18:05:31] https://feeds.bbci.co.uk/news/rss.xml: 成功获取4条相关新闻
+[2025-10-30 18:05:31] 正在抓取: https://techcrunch.com/feed/
+[2025-10-30 18:05:31] 尝试 1/3: 抓取 https://techcrunch.com/feed/
+[2025-10-30 18:05:32] https://techcrunch.com/feed/: 成功获取8条相关新闻
+[2025-10-30 18:05:32] 正在抓取: https://www.wired.com/feed/rss
+[2025-10-30 18:05:32] 尝试 1/3: 抓取 https://www.wired.com/feed/rss
+[2025-10-30 18:05:32] https://www.wired.com/feed/rss: 成功获取12条相关新闻
+[2025-10-30 18:05:32] 正在抓取: https://feeds.bloomberg.com/news/rss
+[2025-10-30 18:05:32] 尝试 1/3: 抓取 https://feeds.bloomberg.com/news/rss
+[2025-10-30 18:05:33] 尝试 1 失败: https://feeds.bloomberg.com/news/rss - 错误: RSS解析错误: <unknown>:7:2: mismatched tag
+[2025-10-30 18:05:33] 2秒后重试...
+[2025-10-30 18:05:35] 尝试 2/3: 抓取 https://feeds.bloomberg.com/news/rss
+[2025-10-30 18:05:35] 尝试 2 失败: https://feeds.bloomberg.com/news/rss - 错误: RSS解析错误: <unknown>:7:2: mismatched tag
+[2025-10-30 18:05:35] 2秒后重试...
+[2025-10-30 18:05:37] 尝试 3/3: 抓取 https://feeds.bloomberg.com/news/rss
+[2025-10-30 18:05:38] 尝试 3 失败: https://feeds.bloomberg.com/news/rss - 错误: RSS解析错误: <unknown>:7:2: mismatched tag
+[2025-10-30 18:05:38] https://feeds.bloomberg.com/news/rss: 经过3次尝试后仍然失败
+[2025-10-30 18:05:38] 正在抓取: https://www.ft.com/rss/home
+[2025-10-30 18:05:38] 尝试 1/3: 抓取 https://www.ft.com/rss/home
+[2025-10-30 18:05:39] https://www.ft.com/rss/home: 成功获取1条相关新闻
+[2025-10-30 18:05:39] 正在抓取: https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml
+[2025-10-30 18:05:39] 尝试 1/3: 抓取 https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml
+[2025-10-30 18:05:40] https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml: 成功获取6条相关新闻
+[2025-10-30 18:05:40] 正在抓取: https://feeds.npr.org/1001/rss.xml
+[2025-10-30 18:05:40] 尝试 1/3: 抓取 https://feeds.npr.org/1001/rss.xml
+[2025-10-30 18:05:40] https://feeds.npr.org/1001/rss.xml: 成功获取0条相关新闻
+[2025-10-30 18:05:40] 共获取 41 条相关新闻
+[2025-10-30 18:05:40] 错误: 未设置DEEPSEEK_API_KEY环境变量。请按以下步骤设置：
+1. 在Windows中: setx DEEPSEEK_API_KEY "你的API密钥"
+2. 重启命令行或IDE使环境变量生效
+3. 获取API密钥: https://platform.deepseek.com/
+跳过摘要生成
+[2025-10-30 18:05:40] 日报已生成: news_daily_20251030.md
+[2025-10-30 18:16:52] 开始测试新闻源可用性...
+[2025-10-30 18:16:52] 测试新闻源: http://www.people.com.cn/rss/politics.xml
+[2025-10-30 18:16:52] 尝试 1/3: 抓取 http://www.people.com.cn/rss/politics.xml
+[2025-10-30 18:16:52] 尝试 1 失败: http://www.people.com.cn/rss/politics.xml - 错误: RSS解析错误: document declared as us-ascii, but parsed as utf-8
+[2025-10-30 18:16:52] 2秒后重试...
+[2025-10-30 18:16:54] 尝试 2/3: 抓取 http://www.people.com.cn/rss/politics.xml
+[2025-10-30 18:16:54] 尝试 2 失败: http://www.people.com.cn/rss/politics.xml - 错误: RSS解析错误: document declared as us-ascii, but parsed as utf-8
+[2025-10-30 18:16:54] 2秒后重试...
+[2025-10-30 18:16:56] 尝试 3/3: 抓取 http://www.people.com.cn/rss/politics.xml
+[2025-10-30 18:16:56] 尝试 3 失败: http://www.people.com.cn/rss/politics.xml - 错误: RSS解析错误: document declared as us-ascii, but parsed as utf-8
+[2025-10-30 18:16:56] http://www.people.com.cn/rss/politics.xml: 经过3次尝试后仍然失败
+[2025-10-30 18:16:56] 测试新闻源: http://www.xinhuanet.com/rss/world.xml
+[2025-10-30 18:16:56] 尝试 1/3: 抓取 http://www.xinhuanet.com/rss/world.xml
+[2025-10-30 18:16:56] 尝试 1 失败: http://www.xinhuanet.com/rss/world.xml - 错误: RSS解析错误: <unknown>:45:43: mismatched tag
+[2025-10-30 18:16:56] 2秒后重试...
+[2025-10-30 18:16:58] 尝试 2/3: 抓取 http://www.xinhuanet.com/rss/world.xml
+[2025-10-30 18:16:59] 尝试 2 失败: http://www.xinhuanet.com/rss/world.xml - 错误: RSS解析错误: <unknown>:45:43: mismatched tag
+[2025-10-30 18:16:59] 2秒后重试...
+[2025-10-30 18:17:01] 尝试 3/3: 抓取 http://www.xinhuanet.com/rss/world.xml
+[2025-10-30 18:17:01] 尝试 3 失败: http://www.xinhuanet.com/rss/world.xml - 错误: RSS解析错误: <unknown>:45:43: mismatched tag
+[2025-10-30 18:17:01] http://www.xinhuanet.com/rss/world.xml: 经过3次尝试后仍然失败
+[2025-10-30 18:17:01] 测试新闻源: https://rss.cnki.net/rss/1
+[2025-10-30 18:17:01] 尝试 1/3: 抓取 https://rss.cnki.net/rss/1
+[2025-10-30 18:17:02] 尝试 1 失败: https://rss.cnki.net/rss/1 - 错误: RSS解析错误: <unknown>:15:50: undefined entity
+[2025-10-30 18:17:02] 2秒后重试...
+[2025-10-30 18:17:04] 尝试 2/3: 抓取 https://rss.cnki.net/rss/1
+[2025-10-30 18:17:05] 尝试 2 失败: https://rss.cnki.net/rss/1 - 错误: RSS解析错误: <unknown>:15:50: undefined entity
+[2025-10-30 18:17:05] 2秒后重试...
+[2025-10-30 18:17:07] 尝试 3/3: 抓取 https://rss.cnki.net/rss/1
+[2025-10-30 18:17:08] 尝试 3 失败: https://rss.cnki.net/rss/1 - 错误: RSS解析错误: <unknown>:15:50: undefined entity
+[2025-10-30 18:17:08] https://rss.cnki.net/rss/1: 经过3次尝试后仍然失败
+[2025-10-30 18:17:08] 测试新闻源: https://www.36kr.com/feed
+[2025-10-30 18:17:08] 尝试 1/3: 抓取 https://www.36kr.com/feed
+[2025-10-30 18:17:08] https://www.36kr.com/feed: 成功获取8条相关新闻
+[2025-10-30 18:17:08] 测试新闻源: https://rss.cnn.com/rss/edition.rss
+[2025-10-30 18:17:08] 尝试 1/3: 抓取 https://rss.cnn.com/rss/edition.rss
+[2025-10-30 18:17:09] 尝试 1 失败: https://rss.cnn.com/rss/edition.rss - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:17:09] 2秒后重试...
+[2025-10-30 18:17:11] 尝试 2/3: 抓取 https://rss.cnn.com/rss/edition.rss
+[2025-10-30 18:17:11] 尝试 2 失败: https://rss.cnn.com/rss/edition.rss - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:17:11] 2秒后重试...
+[2025-10-30 18:17:13] 尝试 3/3: 抓取 https://rss.cnn.com/rss/edition.rss
+[2025-10-30 18:17:14] 尝试 3 失败: https://rss.cnn.com/rss/edition.rss - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:17:14] https://rss.cnn.com/rss/edition.rss: 经过3次尝试后仍然失败
+[2025-10-30 18:17:14] 测试新闻源: http://feeds.reuters.com/reuters/topNews
+[2025-10-30 18:17:14] 尝试 1/3: 抓取 http://feeds.reuters.com/reuters/topNews
+[2025-10-30 18:17:14] http://feeds.reuters.com/reuters/topNews: 成功获取0条相关新闻
+[2025-10-30 18:17:14] 测试新闻源: https://feeds.bbci.co.uk/news/rss.xml
+[2025-10-30 18:17:14] 尝试 1/3: 抓取 https://feeds.bbci.co.uk/news/rss.xml
+[2025-10-30 18:17:14] https://feeds.bbci.co.uk/news/rss.xml: 成功获取4条相关新闻
+[2025-10-30 18:17:14] 测试新闻源: https://techcrunch.com/feed/
+[2025-10-30 18:17:14] 尝试 1/3: 抓取 https://techcrunch.com/feed/
+[2025-10-30 18:17:14] https://techcrunch.com/feed/: 成功获取8条相关新闻
+[2025-10-30 18:17:14] 测试新闻源: https://www.wired.com/feed/rss
+[2025-10-30 18:17:14] 尝试 1/3: 抓取 https://www.wired.com/feed/rss
+[2025-10-30 18:17:14] https://www.wired.com/feed/rss: 成功获取12条相关新闻
+[2025-10-30 18:17:14] 测试新闻源: https://feeds.bloomberg.com/news/rss
+[2025-10-30 18:17:14] 尝试 1/3: 抓取 https://feeds.bloomberg.com/news/rss
+[2025-10-30 18:17:15] 尝试 1 失败: https://feeds.bloomberg.com/news/rss - 错误: RSS解析错误: <unknown>:7:2: mismatched tag
+[2025-10-30 18:17:15] 2秒后重试...
+[2025-10-30 18:17:17] 尝试 2/3: 抓取 https://feeds.bloomberg.com/news/rss
+[2025-10-30 18:17:18] 尝试 2 失败: https://feeds.bloomberg.com/news/rss - 错误: RSS解析错误: <unknown>:7:2: mismatched tag
+[2025-10-30 18:17:18] 2秒后重试...
+[2025-10-30 18:17:20] 尝试 3/3: 抓取 https://feeds.bloomberg.com/news/rss
+[2025-10-30 18:17:21] 尝试 3 失败: https://feeds.bloomberg.com/news/rss - 错误: RSS解析错误: <unknown>:7:2: mismatched tag
+[2025-10-30 18:17:21] https://feeds.bloomberg.com/news/rss: 经过3次尝试后仍然失败
+[2025-10-30 18:17:21] 测试新闻源: https://www.ft.com/rss/home
+[2025-10-30 18:17:21] 尝试 1/3: 抓取 https://www.ft.com/rss/home
+[2025-10-30 18:17:22] https://www.ft.com/rss/home: 成功获取1条相关新闻
+[2025-10-30 18:17:22] 测试新闻源: https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml
+[2025-10-30 18:17:22] 尝试 1/3: 抓取 https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml
+[2025-10-30 18:17:22] https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml: 成功获取6条相关新闻
+[2025-10-30 18:17:22] 测试新闻源: https://feeds.npr.org/1001/rss.xml
+[2025-10-30 18:17:22] 尝试 1/3: 抓取 https://feeds.npr.org/1001/rss.xml
+[2025-10-30 18:17:22] https://feeds.npr.org/1001/rss.xml: 成功获取0条相关新闻
+[2025-10-30 18:17:22] 新闻源可用性测试报告
+==================================================
+http://www.people.com.cn/rss/politics.xml: 失败 (获取0条新闻)
+http://www.xinhuanet.com/rss/world.xml: 失败 (获取0条新闻)
+https://rss.cnki.net/rss/1: 失败 (获取0条新闻)
+https://www.36kr.com/feed: 成功 (获取8条新闻)
+https://rss.cnn.com/rss/edition.rss: 失败 (获取0条新闻)
+http://feeds.reuters.com/reuters/topNews: 失败 (获取0条新闻)
+https://feeds.bbci.co.uk/news/rss.xml: 成功 (获取4条新闻)
+https://techcrunch.com/feed/: 成功 (获取8条新闻)
+https://www.wired.com/feed/rss: 成功 (获取12条新闻)
+https://feeds.bloomberg.com/news/rss: 失败 (获取0条新闻)
+https://www.ft.com/rss/home: 成功 (获取1条新闻)
+https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml: 成功 (获取6条新闻)
+https://feeds.npr.org/1001/rss.xml: 失败 (获取0条新闻)
+
+总计: 6/13 个新闻源可用
+[2025-10-30 18:17:22] 开始抓取新闻...
+[2025-10-30 18:17:22] 正在抓取: http://www.people.com.cn/rss/politics.xml
+[2025-10-30 18:17:22] 尝试 1/3: 抓取 http://www.people.com.cn/rss/politics.xml
+[2025-10-30 18:17:22] 尝试 1 失败: http://www.people.com.cn/rss/politics.xml - 错误: RSS解析错误: document declared as us-ascii, but parsed as utf-8
+[2025-10-30 18:17:22] 2秒后重试...
+[2025-10-30 18:17:24] 尝试 2/3: 抓取 http://www.people.com.cn/rss/politics.xml
+[2025-10-30 18:17:25] 尝试 2 失败: http://www.people.com.cn/rss/politics.xml - 错误: RSS解析错误: document declared as us-ascii, but parsed as utf-8
+[2025-10-30 18:17:25] 2秒后重试...
+[2025-10-30 18:17:27] 尝试 3/3: 抓取 http://www.people.com.cn/rss/politics.xml
+[2025-10-30 18:17:27] 尝试 3 失败: http://www.people.com.cn/rss/politics.xml - 错误: RSS解析错误: document declared as us-ascii, but parsed as utf-8
+[2025-10-30 18:17:27] http://www.people.com.cn/rss/politics.xml: 经过3次尝试后仍然失败
+[2025-10-30 18:17:27] 正在抓取: http://www.xinhuanet.com/rss/world.xml
+[2025-10-30 18:17:27] 尝试 1/3: 抓取 http://www.xinhuanet.com/rss/world.xml
+[2025-10-30 18:17:27] 尝试 1 失败: http://www.xinhuanet.com/rss/world.xml - 错误: RSS解析错误: <unknown>:45:43: mismatched tag
+[2025-10-30 18:17:27] 2秒后重试...
+[2025-10-30 18:17:29] 尝试 2/3: 抓取 http://www.xinhuanet.com/rss/world.xml
+[2025-10-30 18:17:29] 尝试 2 失败: http://www.xinhuanet.com/rss/world.xml - 错误: RSS解析错误: <unknown>:45:43: mismatched tag
+[2025-10-30 18:17:29] 2秒后重试...
+[2025-10-30 18:17:31] 尝试 3/3: 抓取 http://www.xinhuanet.com/rss/world.xml
+[2025-10-30 18:17:31] 尝试 3 失败: http://www.xinhuanet.com/rss/world.xml - 错误: RSS解析错误: <unknown>:45:43: mismatched tag
+[2025-10-30 18:17:31] http://www.xinhuanet.com/rss/world.xml: 经过3次尝试后仍然失败
+[2025-10-30 18:17:31] 正在抓取: https://rss.cnki.net/rss/1
+[2025-10-30 18:17:31] 尝试 1/3: 抓取 https://rss.cnki.net/rss/1
+[2025-10-30 18:17:33] 尝试 1 失败: https://rss.cnki.net/rss/1 - 错误: RSS解析错误: <unknown>:15:50: undefined entity
+[2025-10-30 18:17:33] 2秒后重试...
+[2025-10-30 18:17:35] 尝试 2/3: 抓取 https://rss.cnki.net/rss/1
+[2025-10-30 18:17:37] 尝试 2 失败: https://rss.cnki.net/rss/1 - 错误: RSS解析错误: <unknown>:15:50: undefined entity
+[2025-10-30 18:17:37] 2秒后重试...
+[2025-10-30 18:17:39] 尝试 3/3: 抓取 https://rss.cnki.net/rss/1
+[2025-10-30 18:17:40] 尝试 3 失败: https://rss.cnki.net/rss/1 - 错误: RSS解析错误: <unknown>:15:50: undefined entity
+[2025-10-30 18:17:40] https://rss.cnki.net/rss/1: 经过3次尝试后仍然失败
+[2025-10-30 18:17:40] 正在抓取: https://www.36kr.com/feed
+[2025-10-30 18:17:40] 尝试 1/3: 抓取 https://www.36kr.com/feed
+[2025-10-30 18:17:40] https://www.36kr.com/feed: 成功获取8条相关新闻
+[2025-10-30 18:17:40] 正在抓取: https://rss.cnn.com/rss/edition.rss
+[2025-10-30 18:17:40] 尝试 1/3: 抓取 https://rss.cnn.com/rss/edition.rss
+[2025-10-30 18:17:41] 尝试 1 失败: https://rss.cnn.com/rss/edition.rss - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:17:41] 2秒后重试...
+[2025-10-30 18:17:43] 尝试 2/3: 抓取 https://rss.cnn.com/rss/edition.rss
+[2025-10-30 18:17:43] 尝试 2 失败: https://rss.cnn.com/rss/edition.rss - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:17:43] 2秒后重试...
+[2025-10-30 18:17:45] 尝试 3/3: 抓取 https://rss.cnn.com/rss/edition.rss
+[2025-10-30 18:17:46] 尝试 3 失败: https://rss.cnn.com/rss/edition.rss - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:17:46] https://rss.cnn.com/rss/edition.rss: 经过3次尝试后仍然失败
+[2025-10-30 18:17:46] 正在抓取: http://feeds.reuters.com/reuters/topNews
+[2025-10-30 18:17:46] 尝试 1/3: 抓取 http://feeds.reuters.com/reuters/topNews
+[2025-10-30 18:17:46] http://feeds.reuters.com/reuters/topNews: 成功获取0条相关新闻
+[2025-10-30 18:17:46] 正在抓取: https://feeds.bbci.co.uk/news/rss.xml
+[2025-10-30 18:17:46] 尝试 1/3: 抓取 https://feeds.bbci.co.uk/news/rss.xml
+[2025-10-30 18:17:46] https://feeds.bbci.co.uk/news/rss.xml: 成功获取4条相关新闻
+[2025-10-30 18:17:46] 正在抓取: https://techcrunch.com/feed/
+[2025-10-30 18:17:46] 尝试 1/3: 抓取 https://techcrunch.com/feed/
+[2025-10-30 18:17:46] https://techcrunch.com/feed/: 成功获取8条相关新闻
+[2025-10-30 18:17:46] 正在抓取: https://www.wired.com/feed/rss
+[2025-10-30 18:17:46] 尝试 1/3: 抓取 https://www.wired.com/feed/rss
+[2025-10-30 18:17:46] https://www.wired.com/feed/rss: 成功获取12条相关新闻
+[2025-10-30 18:17:46] 正在抓取: https://feeds.bloomberg.com/news/rss
+[2025-10-30 18:17:46] 尝试 1/3: 抓取 https://feeds.bloomberg.com/news/rss
+[2025-10-30 18:17:47] 尝试 1 失败: https://feeds.bloomberg.com/news/rss - 错误: RSS解析错误: <unknown>:7:2: mismatched tag
+[2025-10-30 18:17:47] 2秒后重试...
+[2025-10-30 18:17:49] 尝试 2/3: 抓取 https://feeds.bloomberg.com/news/rss
+[2025-10-30 18:17:50] 尝试 2 失败: https://feeds.bloomberg.com/news/rss - 错误: RSS解析错误: <unknown>:7:2: mismatched tag
+[2025-10-30 18:17:50] 2秒后重试...
+[2025-10-30 18:17:52] 尝试 3/3: 抓取 https://feeds.bloomberg.com/news/rss
+[2025-10-30 18:17:53] 尝试 3 失败: https://feeds.bloomberg.com/news/rss - 错误: RSS解析错误: <unknown>:7:2: mismatched tag
+[2025-10-30 18:17:53] https://feeds.bloomberg.com/news/rss: 经过3次尝试后仍然失败
+[2025-10-30 18:17:53] 正在抓取: https://www.ft.com/rss/home
+[2025-10-30 18:17:53] 尝试 1/3: 抓取 https://www.ft.com/rss/home
+[2025-10-30 18:17:54] https://www.ft.com/rss/home: 成功获取1条相关新闻
+[2025-10-30 18:17:54] 正在抓取: https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml
+[2025-10-30 18:17:54] 尝试 1/3: 抓取 https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml
+[2025-10-30 18:17:59] 尝试 1 失败: https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:17:59] 2秒后重试...
+[2025-10-30 18:18:01] 尝试 2/3: 抓取 https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml
+[2025-10-30 18:18:06] 尝试 2 失败: https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:18:06] 2秒后重试...
+[2025-10-30 18:18:08] 尝试 3/3: 抓取 https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml
+[2025-10-30 18:18:13] 尝试 3 失败: https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:18:13] https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml: 经过3次尝试后仍然失败
+[2025-10-30 18:18:13] 正在抓取: https://feeds.npr.org/1001/rss.xml
+[2025-10-30 18:18:13] 尝试 1/3: 抓取 https://feeds.npr.org/1001/rss.xml
+[2025-10-30 18:18:13] https://feeds.npr.org/1001/rss.xml: 成功获取0条相关新闻
+[2025-10-30 18:18:13] 共获取 33 条相关新闻
+[2025-10-30 18:18:25] 日报已生成: news_daily_20251030.md
+[2025-10-30 18:21:52] 开始测试新闻源可用性...
+[2025-10-30 18:21:52] 测试新闻源: https://www.36kr.com/feed
+[2025-10-30 18:21:52] 尝试 1/3: 抓取 https://www.36kr.com/feed
+[2025-10-30 18:21:53] https://www.36kr.com/feed: 成功获取7条相关新闻
+[2025-10-30 18:21:53] 测试新闻源: https://rss.thepaper.cn/feed
+[2025-10-30 18:21:53] 尝试 1/3: 抓取 https://rss.thepaper.cn/feed
+[2025-10-30 18:21:53] 尝试 1 失败: https://rss.thepaper.cn/feed - 错误: RSS解析错误: <unknown>:2:0: not well-formed (invalid token)
+[2025-10-30 18:21:53] 2秒后重试...
+[2025-10-30 18:21:55] 尝试 2/3: 抓取 https://rss.thepaper.cn/feed
+[2025-10-30 18:21:55] 尝试 2 失败: https://rss.thepaper.cn/feed - 错误: RSS解析错误: <unknown>:2:0: not well-formed (invalid token)
+[2025-10-30 18:21:55] 2秒后重试...
+[2025-10-30 18:21:57] 尝试 3/3: 抓取 https://rss.thepaper.cn/feed
+[2025-10-30 18:21:57] 尝试 3 失败: https://rss.thepaper.cn/feed - 错误: RSS解析错误: <unknown>:2:0: not well-formed (invalid token)
+[2025-10-30 18:21:57] https://rss.thepaper.cn/feed: 经过3次尝试后仍然失败
+[2025-10-30 18:21:57] 测试新闻源: https://www.jiemian.com/lists/5.xml
+[2025-10-30 18:21:57] 尝试 1/3: 抓取 https://www.jiemian.com/lists/5.xml
+[2025-10-30 18:21:57] 尝试 1 失败: https://www.jiemian.com/lists/5.xml - 错误: RSS解析错误: <unknown>:16:2: mismatched tag
+[2025-10-30 18:21:57] 2秒后重试...
+[2025-10-30 18:21:59] 尝试 2/3: 抓取 https://www.jiemian.com/lists/5.xml
+[2025-10-30 18:21:59] 尝试 2 失败: https://www.jiemian.com/lists/5.xml - 错误: RSS解析错误: <unknown>:16:2: mismatched tag
+[2025-10-30 18:21:59] 2秒后重试...
+[2025-10-30 18:22:01] 尝试 3/3: 抓取 https://www.jiemian.com/lists/5.xml
+[2025-10-30 18:22:03] 尝试 3 失败: https://www.jiemian.com/lists/5.xml - 错误: RSS解析错误: <unknown>:16:2: mismatched tag
+[2025-10-30 18:22:03] https://www.jiemian.com/lists/5.xml: 经过3次尝试后仍然失败
+[2025-10-30 18:22:03] 测试新闻源: https://www.yicai.com/feed
+[2025-10-30 18:22:03] 尝试 1/3: 抓取 https://www.yicai.com/feed
+[2025-10-30 18:22:03] 尝试 1 失败: https://www.yicai.com/feed - 错误: RSS解析错误: <unknown>:2:522: not well-formed (invalid token)
+[2025-10-30 18:22:03] 2秒后重试...
+[2025-10-30 18:22:05] 尝试 2/3: 抓取 https://www.yicai.com/feed
+[2025-10-30 18:22:05] 尝试 2 失败: https://www.yicai.com/feed - 错误: RSS解析错误: <unknown>:2:522: not well-formed (invalid token)
+[2025-10-30 18:22:05] 2秒后重试...
+[2025-10-30 18:22:07] 尝试 3/3: 抓取 https://www.yicai.com/feed
+[2025-10-30 18:22:07] 尝试 3 失败: https://www.yicai.com/feed - 错误: RSS解析错误: <unknown>:2:522: not well-formed (invalid token)
+[2025-10-30 18:22:07] https://www.yicai.com/feed: 经过3次尝试后仍然失败
+[2025-10-30 18:22:07] 测试新闻源: https://rss.caixin.com/markets/finance
+[2025-10-30 18:22:07] 尝试 1/3: 抓取 https://rss.caixin.com/markets/finance
+[2025-10-30 18:22:07] 尝试 1 失败: https://rss.caixin.com/markets/finance - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:22:07] 2秒后重试...
+[2025-10-30 18:22:09] 尝试 2/3: 抓取 https://rss.caixin.com/markets/finance
+[2025-10-30 18:22:09] 尝试 2 失败: https://rss.caixin.com/markets/finance - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:22:09] 2秒后重试...
+[2025-10-30 18:22:11] 尝试 3/3: 抓取 https://rss.caixin.com/markets/finance
+[2025-10-30 18:22:11] 尝试 3 失败: https://rss.caixin.com/markets/finance - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:22:11] https://rss.caixin.com/markets/finance: 经过3次尝试后仍然失败
+[2025-10-30 18:22:11] 测试新闻源: https://feeds.bbci.co.uk/news/rss.xml
+[2025-10-30 18:22:11] 尝试 1/3: 抓取 https://feeds.bbci.co.uk/news/rss.xml
+[2025-10-30 18:22:11] https://feeds.bbci.co.uk/news/rss.xml: 成功获取4条相关新闻
+[2025-10-30 18:22:11] 测试新闻源: https://techcrunch.com/feed/
+[2025-10-30 18:22:11] 尝试 1/3: 抓取 https://techcrunch.com/feed/
+[2025-10-30 18:22:12] https://techcrunch.com/feed/: 成功获取8条相关新闻
+[2025-10-30 18:22:12] 测试新闻源: https://www.wired.com/feed/rss
+[2025-10-30 18:22:12] 尝试 1/3: 抓取 https://www.wired.com/feed/rss
+[2025-10-30 18:22:12] https://www.wired.com/feed/rss: 成功获取12条相关新闻
+[2025-10-30 18:22:12] 测试新闻源: https://www.ft.com/rss/home
+[2025-10-30 18:22:12] 尝试 1/3: 抓取 https://www.ft.com/rss/home
+[2025-10-30 18:22:13] https://www.ft.com/rss/home: 成功获取1条相关新闻
+[2025-10-30 18:22:13] 测试新闻源: https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml
+[2025-10-30 18:22:13] 尝试 1/3: 抓取 https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml
+[2025-10-30 18:22:18] 尝试 1 失败: https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:22:18] 2秒后重试...
+[2025-10-30 18:22:20] 尝试 2/3: 抓取 https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml
+[2025-10-30 18:22:25] 尝试 2 失败: https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:22:25] 2秒后重试...
+[2025-10-30 18:22:27] 尝试 3/3: 抓取 https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml
+[2025-10-30 18:22:32] 尝试 3 失败: https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:22:32] https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml: 经过3次尝试后仍然失败
+[2025-10-30 18:22:32] 测试新闻源: https://feeds.npr.org/1004/rss.xml
+[2025-10-30 18:22:32] 尝试 1/3: 抓取 https://feeds.npr.org/1004/rss.xml
+[2025-10-30 18:22:32] https://feeds.npr.org/1004/rss.xml: 成功获取3条相关新闻
+[2025-10-30 18:22:32] 测试新闻源: https://rss.ap.org/rss/topnews
+[2025-10-30 18:22:32] 尝试 1/3: 抓取 https://rss.ap.org/rss/topnews
+[2025-10-30 18:22:32] 尝试 1 失败: https://rss.ap.org/rss/topnews - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:22:32] 2秒后重试...
+[2025-10-30 18:22:34] 尝试 2/3: 抓取 https://rss.ap.org/rss/topnews
+[2025-10-30 18:22:34] 尝试 2 失败: https://rss.ap.org/rss/topnews - 错误: RSS解析错误: <urlopen error [WinError 10053] 你的主机中的软件中止了一个已建立的连接。>
+[2025-10-30 18:22:34] 2秒后重试...
+[2025-10-30 18:22:36] 尝试 3/3: 抓取 https://rss.ap.org/rss/topnews
+[2025-10-30 18:22:36] 尝试 3 失败: https://rss.ap.org/rss/topnews - 错误: RSS解析错误: <urlopen error [WinError 10053] 你的主机中的软件中止了一个已建立的连接。>
+[2025-10-30 18:22:36] https://rss.ap.org/rss/topnews: 经过3次尝试后仍然失败
+[2025-10-30 18:22:36] 测试新闻源: https://feeds.reuters.com/Reuters/worldNews
+[2025-10-30 18:22:36] 尝试 1/3: 抓取 https://feeds.reuters.com/Reuters/worldNews
+[2025-10-30 18:22:38] 尝试 1 失败: https://feeds.reuters.com/Reuters/worldNews - 错误: RSS解析错误: <urlopen error [WinError 10054] 远程主机强迫关闭了一个现有的连接。>
+[2025-10-30 18:22:38] 2秒后重试...
+[2025-10-30 18:22:40] 尝试 2/3: 抓取 https://feeds.reuters.com/Reuters/worldNews
+[2025-10-30 18:23:01] 尝试 2 失败: https://feeds.reuters.com/Reuters/worldNews - 错误: RSS解析错误: <urlopen error [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。>
+[2025-10-30 18:23:01] 2秒后重试...
+[2025-10-30 18:23:03] 尝试 3/3: 抓取 https://feeds.reuters.com/Reuters/worldNews
+[2025-10-30 18:23:35] 尝试 3 失败: https://feeds.reuters.com/Reuters/worldNews - 错误: RSS解析错误: <urlopen error [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。>
+[2025-10-30 18:23:35] https://feeds.reuters.com/Reuters/worldNews: 经过3次尝试后仍然失败
+[2025-10-30 18:23:35] 测试新闻源: https://rss.cnn.com/rss/money_news_international.rss
+[2025-10-30 18:23:35] 尝试 1/3: 抓取 https://rss.cnn.com/rss/money_news_international.rss
+[2025-10-30 18:23:56] 尝试 1 失败: https://rss.cnn.com/rss/money_news_international.rss - 错误: RSS解析错误: <urlopen error [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。>
+[2025-10-30 18:23:56] 2秒后重试...
+[2025-10-30 18:23:58] 尝试 2/3: 抓取 https://rss.cnn.com/rss/money_news_international.rss
+[2025-10-30 18:24:30] 尝试 2 失败: https://rss.cnn.com/rss/money_news_international.rss - 错误: RSS解析错误: <urlopen error [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。>
+[2025-10-30 18:24:30] 2秒后重试...
+[2025-10-30 18:24:32] 尝试 3/3: 抓取 https://rss.cnn.com/rss/money_news_international.rss
+[2025-10-30 18:24:33] 尝试 3 失败: https://rss.cnn.com/rss/money_news_international.rss - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:24:33] https://rss.cnn.com/rss/money_news_international.rss: 经过3次尝试后仍然失败
+[2025-10-30 18:24:33] 测试新闻源: https://www.theguardian.com/international/rss
+[2025-10-30 18:24:33] 尝试 1/3: 抓取 https://www.theguardian.com/international/rss
+[2025-10-30 18:24:33] https://www.theguardian.com/international/rss: 成功获取25条相关新闻
+[2025-10-30 18:24:33] 新闻源可用性测试报告
+==================================================
+https://www.36kr.com/feed: 成功 (获取7条新闻)
+https://rss.thepaper.cn/feed: 失败 (获取0条新闻)
+https://www.jiemian.com/lists/5.xml: 失败 (获取0条新闻)
+https://www.yicai.com/feed: 失败 (获取0条新闻)
+https://rss.caixin.com/markets/finance: 失败 (获取0条新闻)
+https://feeds.bbci.co.uk/news/rss.xml: 成功 (获取4条新闻)
+https://techcrunch.com/feed/: 成功 (获取8条新闻)
+https://www.wired.com/feed/rss: 成功 (获取12条新闻)
+https://www.ft.com/rss/home: 成功 (获取1条新闻)
+https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml: 失败 (获取0条新闻)
+https://feeds.npr.org/1004/rss.xml: 成功 (获取3条新闻)
+https://rss.ap.org/rss/topnews: 失败 (获取0条新闻)
+https://feeds.reuters.com/Reuters/worldNews: 失败 (获取0条新闻)
+https://rss.cnn.com/rss/money_news_international.rss: 失败 (获取0条新闻)
+https://www.theguardian.com/international/rss: 成功 (获取25条新闻)
+
+总计: 7/15 个新闻源可用
+[2025-10-30 18:24:33] 开始抓取新闻...
+[2025-10-30 18:24:33] 正在抓取: https://www.36kr.com/feed
+[2025-10-30 18:24:33] 尝试 1/3: 抓取 https://www.36kr.com/feed
+[2025-10-30 18:24:33] https://www.36kr.com/feed: 成功获取7条相关新闻
+[2025-10-30 18:24:33] 正在抓取: https://rss.thepaper.cn/feed
+[2025-10-30 18:24:33] 尝试 1/3: 抓取 https://rss.thepaper.cn/feed
+[2025-10-30 18:24:34] 尝试 1 失败: https://rss.thepaper.cn/feed - 错误: RSS解析错误: <unknown>:2:0: not well-formed (invalid token)
+[2025-10-30 18:24:34] 2秒后重试...
+[2025-10-30 18:24:36] 尝试 2/3: 抓取 https://rss.thepaper.cn/feed
+[2025-10-30 18:24:36] 尝试 2 失败: https://rss.thepaper.cn/feed - 错误: RSS解析错误: <unknown>:2:0: not well-formed (invalid token)
+[2025-10-30 18:24:36] 2秒后重试...
+[2025-10-30 18:24:38] 尝试 3/3: 抓取 https://rss.thepaper.cn/feed
+[2025-10-30 18:24:38] 尝试 3 失败: https://rss.thepaper.cn/feed - 错误: RSS解析错误: <unknown>:2:0: not well-formed (invalid token)
+[2025-10-30 18:24:38] https://rss.thepaper.cn/feed: 经过3次尝试后仍然失败
+[2025-10-30 18:24:38] 正在抓取: https://www.jiemian.com/lists/5.xml
+[2025-10-30 18:24:38] 尝试 1/3: 抓取 https://www.jiemian.com/lists/5.xml
+[2025-10-30 18:24:38] 尝试 1 失败: https://www.jiemian.com/lists/5.xml - 错误: RSS解析错误: <unknown>:16:2: mismatched tag
+[2025-10-30 18:24:38] 2秒后重试...
+[2025-10-30 18:24:40] 尝试 2/3: 抓取 https://www.jiemian.com/lists/5.xml
+[2025-10-30 18:24:41] 尝试 2 失败: https://www.jiemian.com/lists/5.xml - 错误: RSS解析错误: <unknown>:16:2: mismatched tag
+[2025-10-30 18:24:41] 2秒后重试...
+[2025-10-30 18:24:43] 尝试 3/3: 抓取 https://www.jiemian.com/lists/5.xml
+[2025-10-30 18:24:43] 尝试 3 失败: https://www.jiemian.com/lists/5.xml - 错误: RSS解析错误: <unknown>:16:2: mismatched tag
+[2025-10-30 18:24:43] https://www.jiemian.com/lists/5.xml: 经过3次尝试后仍然失败
+[2025-10-30 18:24:43] 正在抓取: https://www.yicai.com/feed
+[2025-10-30 18:24:43] 尝试 1/3: 抓取 https://www.yicai.com/feed
+[2025-10-30 18:24:43] 尝试 1 失败: https://www.yicai.com/feed - 错误: RSS解析错误: <unknown>:2:522: not well-formed (invalid token)
+[2025-10-30 18:24:43] 2秒后重试...
+[2025-10-30 18:24:45] 尝试 2/3: 抓取 https://www.yicai.com/feed
+[2025-10-30 18:24:46] 尝试 2 失败: https://www.yicai.com/feed - 错误: RSS解析错误: <unknown>:2:522: not well-formed (invalid token)
+[2025-10-30 18:24:46] 2秒后重试...
+[2025-10-30 18:24:48] 尝试 3/3: 抓取 https://www.yicai.com/feed
+[2025-10-30 18:24:48] 尝试 3 失败: https://www.yicai.com/feed - 错误: RSS解析错误: <unknown>:2:522: not well-formed (invalid token)
+[2025-10-30 18:24:48] https://www.yicai.com/feed: 经过3次尝试后仍然失败
+[2025-10-30 18:24:48] 正在抓取: https://rss.caixin.com/markets/finance
+[2025-10-30 18:24:48] 尝试 1/3: 抓取 https://rss.caixin.com/markets/finance
+[2025-10-30 18:24:48] 尝试 1 失败: https://rss.caixin.com/markets/finance - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:24:48] 2秒后重试...
+[2025-10-30 18:24:50] 尝试 2/3: 抓取 https://rss.caixin.com/markets/finance
+[2025-10-30 18:24:51] 尝试 2 失败: https://rss.caixin.com/markets/finance - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:24:51] 2秒后重试...
+[2025-10-30 18:24:53] 尝试 3/3: 抓取 https://rss.caixin.com/markets/finance
+[2025-10-30 18:24:53] 尝试 3 失败: https://rss.caixin.com/markets/finance - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:24:53] https://rss.caixin.com/markets/finance: 经过3次尝试后仍然失败
+[2025-10-30 18:24:53] 正在抓取: https://feeds.bbci.co.uk/news/rss.xml
+[2025-10-30 18:24:53] 尝试 1/3: 抓取 https://feeds.bbci.co.uk/news/rss.xml
+[2025-10-30 18:24:58] 尝试 1 失败: https://feeds.bbci.co.uk/news/rss.xml - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:24:58] 2秒后重试...
+[2025-10-30 18:25:00] 尝试 2/3: 抓取 https://feeds.bbci.co.uk/news/rss.xml
+[2025-10-30 18:25:05] 尝试 2 失败: https://feeds.bbci.co.uk/news/rss.xml - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:25:05] 2秒后重试...
+[2025-10-30 18:25:07] 尝试 3/3: 抓取 https://feeds.bbci.co.uk/news/rss.xml
+[2025-10-30 18:25:12] 尝试 3 失败: https://feeds.bbci.co.uk/news/rss.xml - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:25:12] https://feeds.bbci.co.uk/news/rss.xml: 经过3次尝试后仍然失败
+[2025-10-30 18:25:12] 正在抓取: https://techcrunch.com/feed/
+[2025-10-30 18:25:12] 尝试 1/3: 抓取 https://techcrunch.com/feed/
+[2025-10-30 18:25:12] https://techcrunch.com/feed/: 成功获取8条相关新闻
+[2025-10-30 18:25:12] 正在抓取: https://www.wired.com/feed/rss
+[2025-10-30 18:25:12] 尝试 1/3: 抓取 https://www.wired.com/feed/rss
+[2025-10-30 18:25:12] https://www.wired.com/feed/rss: 成功获取12条相关新闻
+[2025-10-30 18:25:12] 正在抓取: https://www.ft.com/rss/home
+[2025-10-30 18:25:12] 尝试 1/3: 抓取 https://www.ft.com/rss/home
+[2025-10-30 18:25:14] https://www.ft.com/rss/home: 成功获取1条相关新闻
+[2025-10-30 18:25:14] 正在抓取: https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml
+[2025-10-30 18:25:14] 尝试 1/3: 抓取 https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml
+[2025-10-30 18:25:14] https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml: 成功获取6条相关新闻
+[2025-10-30 18:25:14] 正在抓取: https://feeds.npr.org/1004/rss.xml
+[2025-10-30 18:25:14] 尝试 1/3: 抓取 https://feeds.npr.org/1004/rss.xml
+[2025-10-30 18:25:14] https://feeds.npr.org/1004/rss.xml: 成功获取3条相关新闻
+[2025-10-30 18:25:14] 正在抓取: https://rss.ap.org/rss/topnews
+[2025-10-30 18:25:14] 尝试 1/3: 抓取 https://rss.ap.org/rss/topnews
+[2025-10-30 18:25:14] 尝试 1 失败: https://rss.ap.org/rss/topnews - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:25:14] 2秒后重试...
+[2025-10-30 18:25:16] 尝试 2/3: 抓取 https://rss.ap.org/rss/topnews
+[2025-10-30 18:25:16] 尝试 2 失败: https://rss.ap.org/rss/topnews - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:25:16] 2秒后重试...
+[2025-10-30 18:25:18] 尝试 3/3: 抓取 https://rss.ap.org/rss/topnews
+[2025-10-30 18:25:18] 尝试 3 失败: https://rss.ap.org/rss/topnews - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:25:18] https://rss.ap.org/rss/topnews: 经过3次尝试后仍然失败
+[2025-10-30 18:25:18] 正在抓取: https://feeds.reuters.com/Reuters/worldNews
+[2025-10-30 18:25:18] 尝试 1/3: 抓取 https://feeds.reuters.com/Reuters/worldNews
+[2025-10-30 18:25:18] 尝试 1 失败: https://feeds.reuters.com/Reuters/worldNews - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:25:18] 2秒后重试...
+[2025-10-30 18:25:20] 尝试 2/3: 抓取 https://feeds.reuters.com/Reuters/worldNews
+[2025-10-30 18:25:21] 尝试 2 失败: https://feeds.reuters.com/Reuters/worldNews - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:25:21] 2秒后重试...
+[2025-10-30 18:25:23] 尝试 3/3: 抓取 https://feeds.reuters.com/Reuters/worldNews
+[2025-10-30 18:25:23] 尝试 3 失败: https://feeds.reuters.com/Reuters/worldNews - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:25:23] https://feeds.reuters.com/Reuters/worldNews: 经过3次尝试后仍然失败
+[2025-10-30 18:25:23] 正在抓取: https://rss.cnn.com/rss/money_news_international.rss
+[2025-10-30 18:25:23] 尝试 1/3: 抓取 https://rss.cnn.com/rss/money_news_international.rss
+[2025-10-30 18:25:23] 尝试 1 失败: https://rss.cnn.com/rss/money_news_international.rss - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:25:23] 2秒后重试...
+[2025-10-30 18:25:25] 尝试 2/3: 抓取 https://rss.cnn.com/rss/money_news_international.rss
+[2025-10-30 18:25:26] 尝试 2 失败: https://rss.cnn.com/rss/money_news_international.rss - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:25:26] 2秒后重试...
+[2025-10-30 18:25:28] 尝试 3/3: 抓取 https://rss.cnn.com/rss/money_news_international.rss
+[2025-10-30 18:25:28] 尝试 3 失败: https://rss.cnn.com/rss/money_news_international.rss - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:25:28] https://rss.cnn.com/rss/money_news_international.rss: 经过3次尝试后仍然失败
+[2025-10-30 18:25:28] 正在抓取: https://www.theguardian.com/international/rss
+[2025-10-30 18:25:28] 尝试 1/3: 抓取 https://www.theguardian.com/international/rss
+[2025-10-30 18:25:28] https://www.theguardian.com/international/rss: 成功获取25条相关新闻
+[2025-10-30 18:25:28] 共获取 62 条相关新闻
+[2025-10-30 18:25:42] 日报已生成: news_daily_20251030.md
+[2025-10-30 18:26:29] 开始测试新闻源可用性...
+[2025-10-30 18:26:29] 测试新闻源: https://www.36kr.com/feed
+[2025-10-30 18:26:29] 尝试 1/3: 抓取 https://www.36kr.com/feed
+[2025-10-30 18:26:30] https://www.36kr.com/feed: 成功获取7条相关新闻
+[2025-10-30 18:26:30] 测试新闻源: https://rss.thepaper.cn/feed
+[2025-10-30 18:26:30] 尝试 1/3: 抓取 https://rss.thepaper.cn/feed
+[2025-10-30 18:26:30] 尝试 1 失败: https://rss.thepaper.cn/feed - 错误: RSS解析错误: <unknown>:2:0: not well-formed (invalid token)
+[2025-10-30 18:26:30] 2秒后重试...
+[2025-10-30 18:26:32] 尝试 2/3: 抓取 https://rss.thepaper.cn/feed
+[2025-10-30 18:26:33] 尝试 2 失败: https://rss.thepaper.cn/feed - 错误: RSS解析错误: <unknown>:2:0: not well-formed (invalid token)
+[2025-10-30 18:26:33] 2秒后重试...
+[2025-10-30 18:26:35] 尝试 3/3: 抓取 https://rss.thepaper.cn/feed
+[2025-10-30 18:26:35] 尝试 3 失败: https://rss.thepaper.cn/feed - 错误: RSS解析错误: <unknown>:2:0: not well-formed (invalid token)
+[2025-10-30 18:26:35] https://rss.thepaper.cn/feed: 经过3次尝试后仍然失败
+[2025-10-30 18:26:35] 测试新闻源: https://www.jiemian.com/lists/5.xml
+[2025-10-30 18:26:35] 尝试 1/3: 抓取 https://www.jiemian.com/lists/5.xml
+[2025-10-30 18:26:35] 尝试 1 失败: https://www.jiemian.com/lists/5.xml - 错误: RSS解析错误: <unknown>:16:2: mismatched tag
+[2025-10-30 18:26:35] 2秒后重试...
+[2025-10-30 18:26:37] 尝试 2/3: 抓取 https://www.jiemian.com/lists/5.xml
+[2025-10-30 18:26:38] 尝试 2 失败: https://www.jiemian.com/lists/5.xml - 错误: RSS解析错误: <unknown>:16:2: mismatched tag
+[2025-10-30 18:26:38] 2秒后重试...
+[2025-10-30 18:26:40] 尝试 3/3: 抓取 https://www.jiemian.com/lists/5.xml
+[2025-10-30 18:26:40] 尝试 3 失败: https://www.jiemian.com/lists/5.xml - 错误: RSS解析错误: <unknown>:16:2: mismatched tag
+[2025-10-30 18:26:40] https://www.jiemian.com/lists/5.xml: 经过3次尝试后仍然失败
+[2025-10-30 18:26:40] 测试新闻源: https://www.yicai.com/feed
+[2025-10-30 18:26:40] 尝试 1/3: 抓取 https://www.yicai.com/feed
+[2025-10-30 18:26:40] 尝试 1 失败: https://www.yicai.com/feed - 错误: RSS解析错误: <unknown>:2:522: not well-formed (invalid token)
+[2025-10-30 18:26:40] 2秒后重试...
+[2025-10-30 18:26:42] 尝试 2/3: 抓取 https://www.yicai.com/feed
+[2025-10-30 18:26:42] 尝试 2 失败: https://www.yicai.com/feed - 错误: RSS解析错误: <unknown>:2:522: not well-formed (invalid token)
+[2025-10-30 18:26:42] 2秒后重试...
+[2025-10-30 18:26:44] 尝试 3/3: 抓取 https://www.yicai.com/feed
+[2025-10-30 18:26:44] 尝试 3 失败: https://www.yicai.com/feed - 错误: RSS解析错误: <unknown>:2:522: not well-formed (invalid token)
+[2025-10-30 18:26:44] https://www.yicai.com/feed: 经过3次尝试后仍然失败
+[2025-10-30 18:26:44] 测试新闻源: https://rss.caixin.com/markets/finance
+[2025-10-30 18:26:44] 尝试 1/3: 抓取 https://rss.caixin.com/markets/finance
+[2025-10-30 18:26:44] 尝试 1 失败: https://rss.caixin.com/markets/finance - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:26:44] 2秒后重试...
+[2025-10-30 18:26:46] 尝试 2/3: 抓取 https://rss.caixin.com/markets/finance
+[2025-10-30 18:26:46] 尝试 2 失败: https://rss.caixin.com/markets/finance - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:26:46] 2秒后重试...
+[2025-10-30 18:26:48] 尝试 3/3: 抓取 https://rss.caixin.com/markets/finance
+[2025-10-30 18:26:49] 尝试 3 失败: https://rss.caixin.com/markets/finance - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:26:49] https://rss.caixin.com/markets/finance: 经过3次尝试后仍然失败
+[2025-10-30 18:26:49] 测试新闻源: https://www.huxiu.com/rss/0.xml
+[2025-10-30 18:26:49] 尝试 1/3: 抓取 https://www.huxiu.com/rss/0.xml
+[2025-10-30 18:26:49] https://www.huxiu.com/rss/0.xml: 成功获取1条相关新闻
+[2025-10-30 18:26:49] 测试新闻源: https://www.tmtpost.com/rss.xml
+[2025-10-30 18:26:49] 尝试 1/3: 抓取 https://www.tmtpost.com/rss.xml
+[2025-10-30 18:26:50] https://www.tmtpost.com/rss.xml: 成功获取4条相关新闻
+[2025-10-30 18:26:50] 测试新闻源: https://feeds.bbci.co.uk/news/rss.xml
+[2025-10-30 18:26:50] 尝试 1/3: 抓取 https://feeds.bbci.co.uk/news/rss.xml
+[2025-10-30 18:26:55] 尝试 1 失败: https://feeds.bbci.co.uk/news/rss.xml - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:26:55] 2秒后重试...
+[2025-10-30 18:26:57] 尝试 2/3: 抓取 https://feeds.bbci.co.uk/news/rss.xml
+[2025-10-30 18:27:02] 尝试 2 失败: https://feeds.bbci.co.uk/news/rss.xml - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:27:02] 2秒后重试...
+[2025-10-30 18:27:04] 尝试 3/3: 抓取 https://feeds.bbci.co.uk/news/rss.xml
+[2025-10-30 18:27:09] 尝试 3 失败: https://feeds.bbci.co.uk/news/rss.xml - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:27:09] https://feeds.bbci.co.uk/news/rss.xml: 经过3次尝试后仍然失败
+[2025-10-30 18:27:09] 测试新闻源: https://techcrunch.com/feed/
+[2025-10-30 18:27:09] 尝试 1/3: 抓取 https://techcrunch.com/feed/
+[2025-10-30 18:27:09] https://techcrunch.com/feed/: 成功获取8条相关新闻
+[2025-10-30 18:27:09] 测试新闻源: https://www.wired.com/feed/rss
+[2025-10-30 18:27:09] 尝试 1/3: 抓取 https://www.wired.com/feed/rss
+[2025-10-30 18:27:09] https://www.wired.com/feed/rss: 成功获取12条相关新闻
+[2025-10-30 18:27:09] 测试新闻源: https://www.ft.com/rss/home
+[2025-10-30 18:27:09] 尝试 1/3: 抓取 https://www.ft.com/rss/home
+[2025-10-30 18:27:10] https://www.ft.com/rss/home: 成功获取1条相关新闻
+[2025-10-30 18:27:10] 测试新闻源: https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml
+[2025-10-30 18:27:10] 尝试 1/3: 抓取 https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml
+[2025-10-30 18:27:11] https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml: 成功获取6条相关新闻
+[2025-10-30 18:27:11] 测试新闻源: https://feeds.npr.org/1004/rss.xml
+[2025-10-30 18:27:11] 尝试 1/3: 抓取 https://feeds.npr.org/1004/rss.xml
+[2025-10-30 18:27:12] https://feeds.npr.org/1004/rss.xml: 成功获取3条相关新闻
+[2025-10-30 18:27:12] 测试新闻源: https://rss.ap.org/rss/topnews
+[2025-10-30 18:27:12] 尝试 1/3: 抓取 https://rss.ap.org/rss/topnews
+[2025-10-30 18:27:12] 尝试 1 失败: https://rss.ap.org/rss/topnews - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:27:12] 2秒后重试...
+[2025-10-30 18:27:14] 尝试 2/3: 抓取 https://rss.ap.org/rss/topnews
+[2025-10-30 18:27:14] 尝试 2 失败: https://rss.ap.org/rss/topnews - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:27:14] 2秒后重试...
+[2025-10-30 18:27:16] 尝试 3/3: 抓取 https://rss.ap.org/rss/topnews
+[2025-10-30 18:27:16] 尝试 3 失败: https://rss.ap.org/rss/topnews - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:27:16] https://rss.ap.org/rss/topnews: 经过3次尝试后仍然失败
+[2025-10-30 18:27:16] 测试新闻源: https://www.theguardian.com/international/rss
+[2025-10-30 18:27:16] 尝试 1/3: 抓取 https://www.theguardian.com/international/rss
+[2025-10-30 18:27:17] https://www.theguardian.com/international/rss: 成功获取25条相关新闻
+[2025-10-30 18:27:17] 测试新闻源: https://feeds.businessinsider.com/technology
+[2025-10-30 18:27:17] 尝试 1/3: 抓取 https://feeds.businessinsider.com/technology
+[2025-10-30 18:27:18] 尝试 1 失败: https://feeds.businessinsider.com/technology - 错误: RSS解析错误: <unknown>:2:0: syntax error
+[2025-10-30 18:27:18] 2秒后重试...
+[2025-10-30 18:27:20] 尝试 2/3: 抓取 https://feeds.businessinsider.com/technology
+[2025-10-30 18:27:21] 尝试 2 失败: https://feeds.businessinsider.com/technology - 错误: RSS解析错误: <unknown>:2:0: syntax error
+[2025-10-30 18:27:21] 2秒后重试...
+[2025-10-30 18:27:23] 尝试 3/3: 抓取 https://feeds.businessinsider.com/technology
+[2025-10-30 18:27:24] 尝试 3 失败: https://feeds.businessinsider.com/technology - 错误: RSS解析错误: <unknown>:2:0: syntax error
+[2025-10-30 18:27:24] https://feeds.businessinsider.com/technology: 经过3次尝试后仍然失败
+[2025-10-30 18:27:24] 测试新闻源: https://rss.wallstreetcn.com/global
+[2025-10-30 18:27:24] 尝试 1/3: 抓取 https://rss.wallstreetcn.com/global
+[2025-10-30 18:27:24] 尝试 1 失败: https://rss.wallstreetcn.com/global - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:27:24] 2秒后重试...
+[2025-10-30 18:27:26] 尝试 2/3: 抓取 https://rss.wallstreetcn.com/global
+[2025-10-30 18:27:26] 尝试 2 失败: https://rss.wallstreetcn.com/global - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:27:26] 2秒后重试...
+[2025-10-30 18:27:28] 尝试 3/3: 抓取 https://rss.wallstreetcn.com/global
+[2025-10-30 18:27:28] 尝试 3 失败: https://rss.wallstreetcn.com/global - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:27:28] https://rss.wallstreetcn.com/global: 经过3次尝试后仍然失败
+[2025-10-30 18:27:28] 新闻源可用性测试报告
+==================================================
+https://www.36kr.com/feed: 成功 (获取7条新闻)
+https://rss.thepaper.cn/feed: 失败 (获取0条新闻)
+https://www.jiemian.com/lists/5.xml: 失败 (获取0条新闻)
+https://www.yicai.com/feed: 失败 (获取0条新闻)
+https://rss.caixin.com/markets/finance: 失败 (获取0条新闻)
+https://www.huxiu.com/rss/0.xml: 成功 (获取1条新闻)
+https://www.tmtpost.com/rss.xml: 成功 (获取4条新闻)
+https://feeds.bbci.co.uk/news/rss.xml: 失败 (获取0条新闻)
+https://techcrunch.com/feed/: 成功 (获取8条新闻)
+https://www.wired.com/feed/rss: 成功 (获取12条新闻)
+https://www.ft.com/rss/home: 成功 (获取1条新闻)
+https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml: 成功 (获取6条新闻)
+https://feeds.npr.org/1004/rss.xml: 成功 (获取3条新闻)
+https://rss.ap.org/rss/topnews: 失败 (获取0条新闻)
+https://www.theguardian.com/international/rss: 成功 (获取25条新闻)
+https://feeds.businessinsider.com/technology: 失败 (获取0条新闻)
+https://rss.wallstreetcn.com/global: 失败 (获取0条新闻)
+
+总计: 9/17 个新闻源可用
+[2025-10-30 18:27:28] 开始抓取新闻...
+[2025-10-30 18:27:28] 正在抓取: https://www.36kr.com/feed
+[2025-10-30 18:27:28] 尝试 1/3: 抓取 https://www.36kr.com/feed
+[2025-10-30 18:27:28] https://www.36kr.com/feed: 成功获取7条相关新闻
+[2025-10-30 18:27:28] 正在抓取: https://rss.thepaper.cn/feed
+[2025-10-30 18:27:28] 尝试 1/3: 抓取 https://rss.thepaper.cn/feed
+[2025-10-30 18:27:28] 尝试 1 失败: https://rss.thepaper.cn/feed - 错误: RSS解析错误: <unknown>:2:0: not well-formed (invalid token)
+[2025-10-30 18:27:28] 2秒后重试...
+[2025-10-30 18:27:30] 尝试 2/3: 抓取 https://rss.thepaper.cn/feed
+[2025-10-30 18:27:31] 尝试 2 失败: https://rss.thepaper.cn/feed - 错误: RSS解析错误: <unknown>:2:0: not well-formed (invalid token)
+[2025-10-30 18:27:31] 2秒后重试...
+[2025-10-30 18:27:33] 尝试 3/3: 抓取 https://rss.thepaper.cn/feed
+[2025-10-30 18:27:33] 尝试 3 失败: https://rss.thepaper.cn/feed - 错误: RSS解析错误: <unknown>:2:0: not well-formed (invalid token)
+[2025-10-30 18:27:33] https://rss.thepaper.cn/feed: 经过3次尝试后仍然失败
+[2025-10-30 18:27:33] 正在抓取: https://www.jiemian.com/lists/5.xml
+[2025-10-30 18:27:33] 尝试 1/3: 抓取 https://www.jiemian.com/lists/5.xml
+[2025-10-30 18:27:33] 尝试 1 失败: https://www.jiemian.com/lists/5.xml - 错误: RSS解析错误: <unknown>:16:2: mismatched tag
+[2025-10-30 18:27:33] 2秒后重试...
+[2025-10-30 18:27:35] 尝试 2/3: 抓取 https://www.jiemian.com/lists/5.xml
+[2025-10-30 18:27:35] 尝试 2 失败: https://www.jiemian.com/lists/5.xml - 错误: RSS解析错误: <unknown>:16:2: mismatched tag
+[2025-10-30 18:27:35] 2秒后重试...
+[2025-10-30 18:27:37] 尝试 3/3: 抓取 https://www.jiemian.com/lists/5.xml
+[2025-10-30 18:27:37] 尝试 3 失败: https://www.jiemian.com/lists/5.xml - 错误: RSS解析错误: <unknown>:16:2: mismatched tag
+[2025-10-30 18:27:37] https://www.jiemian.com/lists/5.xml: 经过3次尝试后仍然失败
+[2025-10-30 18:27:37] 正在抓取: https://www.yicai.com/feed
+[2025-10-30 18:27:37] 尝试 1/3: 抓取 https://www.yicai.com/feed
+[2025-10-30 18:27:38] 尝试 1 失败: https://www.yicai.com/feed - 错误: RSS解析错误: <unknown>:2:522: not well-formed (invalid token)
+[2025-10-30 18:27:38] 2秒后重试...
+[2025-10-30 18:27:40] 尝试 2/3: 抓取 https://www.yicai.com/feed
+[2025-10-30 18:27:40] 尝试 2 失败: https://www.yicai.com/feed - 错误: RSS解析错误: <unknown>:2:522: not well-formed (invalid token)
+[2025-10-30 18:27:40] 2秒后重试...
+[2025-10-30 18:27:42] 尝试 3/3: 抓取 https://www.yicai.com/feed
+[2025-10-30 18:27:42] 尝试 3 失败: https://www.yicai.com/feed - 错误: RSS解析错误: <unknown>:2:522: not well-formed (invalid token)
+[2025-10-30 18:27:42] https://www.yicai.com/feed: 经过3次尝试后仍然失败
+[2025-10-30 18:27:42] 正在抓取: https://rss.caixin.com/markets/finance
+[2025-10-30 18:27:42] 尝试 1/3: 抓取 https://rss.caixin.com/markets/finance
+[2025-10-30 18:27:42] 尝试 1 失败: https://rss.caixin.com/markets/finance - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:27:42] 2秒后重试...
+[2025-10-30 18:27:44] 尝试 2/3: 抓取 https://rss.caixin.com/markets/finance
+[2025-10-30 18:27:44] 尝试 2 失败: https://rss.caixin.com/markets/finance - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:27:44] 2秒后重试...
+[2025-10-30 18:27:46] 尝试 3/3: 抓取 https://rss.caixin.com/markets/finance
+[2025-10-30 18:27:46] 尝试 3 失败: https://rss.caixin.com/markets/finance - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:27:46] https://rss.caixin.com/markets/finance: 经过3次尝试后仍然失败
+[2025-10-30 18:27:46] 正在抓取: https://www.huxiu.com/rss/0.xml
+[2025-10-30 18:27:46] 尝试 1/3: 抓取 https://www.huxiu.com/rss/0.xml
+[2025-10-30 18:27:46] https://www.huxiu.com/rss/0.xml: 成功获取1条相关新闻
+[2025-10-30 18:27:46] 正在抓取: https://www.tmtpost.com/rss.xml
+[2025-10-30 18:27:46] 尝试 1/3: 抓取 https://www.tmtpost.com/rss.xml
+[2025-10-30 18:27:47] https://www.tmtpost.com/rss.xml: 成功获取4条相关新闻
+[2025-10-30 18:27:47] 正在抓取: https://feeds.bbci.co.uk/news/rss.xml
+[2025-10-30 18:27:47] 尝试 1/3: 抓取 https://feeds.bbci.co.uk/news/rss.xml
+[2025-10-30 18:27:52] 尝试 1 失败: https://feeds.bbci.co.uk/news/rss.xml - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:27:52] 2秒后重试...
+[2025-10-30 18:27:54] 尝试 2/3: 抓取 https://feeds.bbci.co.uk/news/rss.xml
+[2025-10-30 18:27:59] 尝试 2 失败: https://feeds.bbci.co.uk/news/rss.xml - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:27:59] 2秒后重试...
+[2025-10-30 18:28:01] 尝试 3/3: 抓取 https://feeds.bbci.co.uk/news/rss.xml
+[2025-10-30 18:28:06] 尝试 3 失败: https://feeds.bbci.co.uk/news/rss.xml - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:28:06] https://feeds.bbci.co.uk/news/rss.xml: 经过3次尝试后仍然失败
+[2025-10-30 18:28:06] 正在抓取: https://techcrunch.com/feed/
+[2025-10-30 18:28:06] 尝试 1/3: 抓取 https://techcrunch.com/feed/
+[2025-10-30 18:28:07] https://techcrunch.com/feed/: 成功获取8条相关新闻
+[2025-10-30 18:28:07] 正在抓取: https://www.wired.com/feed/rss
+[2025-10-30 18:28:07] 尝试 1/3: 抓取 https://www.wired.com/feed/rss
+[2025-10-30 18:28:07] https://www.wired.com/feed/rss: 成功获取12条相关新闻
+[2025-10-30 18:28:07] 正在抓取: https://www.ft.com/rss/home
+[2025-10-30 18:28:07] 尝试 1/3: 抓取 https://www.ft.com/rss/home
+[2025-10-30 18:28:08] https://www.ft.com/rss/home: 成功获取1条相关新闻
+[2025-10-30 18:28:08] 正在抓取: https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml
+[2025-10-30 18:28:08] 尝试 1/3: 抓取 https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml
+[2025-10-30 18:28:08] https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml: 成功获取6条相关新闻
+[2025-10-30 18:28:08] 正在抓取: https://feeds.npr.org/1004/rss.xml
+[2025-10-30 18:28:08] 尝试 1/3: 抓取 https://feeds.npr.org/1004/rss.xml
+[2025-10-30 18:28:08] https://feeds.npr.org/1004/rss.xml: 成功获取3条相关新闻
+[2025-10-30 18:28:08] 正在抓取: https://rss.ap.org/rss/topnews
+[2025-10-30 18:28:08] 尝试 1/3: 抓取 https://rss.ap.org/rss/topnews
+[2025-10-30 18:28:08] 尝试 1 失败: https://rss.ap.org/rss/topnews - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:28:08] 2秒后重试...
+[2025-10-30 18:28:10] 尝试 2/3: 抓取 https://rss.ap.org/rss/topnews
+[2025-10-30 18:28:11] 尝试 2 失败: https://rss.ap.org/rss/topnews - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:28:11] 2秒后重试...
+[2025-10-30 18:28:13] 尝试 3/3: 抓取 https://rss.ap.org/rss/topnews
+[2025-10-30 18:28:13] 尝试 3 失败: https://rss.ap.org/rss/topnews - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:28:13] https://rss.ap.org/rss/topnews: 经过3次尝试后仍然失败
+[2025-10-30 18:28:13] 正在抓取: https://www.theguardian.com/international/rss
+[2025-10-30 18:28:13] 尝试 1/3: 抓取 https://www.theguardian.com/international/rss
+[2025-10-30 18:28:13] https://www.theguardian.com/international/rss: 成功获取25条相关新闻
+[2025-10-30 18:28:13] 正在抓取: https://feeds.businessinsider.com/technology
+[2025-10-30 18:28:13] 尝试 1/3: 抓取 https://feeds.businessinsider.com/technology
+[2025-10-30 18:28:14] 尝试 1 失败: https://feeds.businessinsider.com/technology - 错误: RSS解析错误: <unknown>:2:0: syntax error
+[2025-10-30 18:28:14] 2秒后重试...
+[2025-10-30 18:28:16] 尝试 2/3: 抓取 https://feeds.businessinsider.com/technology
+[2025-10-30 18:28:17] 尝试 2 失败: https://feeds.businessinsider.com/technology - 错误: RSS解析错误: <unknown>:2:0: syntax error
+[2025-10-30 18:28:17] 2秒后重试...
+[2025-10-30 18:28:19] 尝试 3/3: 抓取 https://feeds.businessinsider.com/technology
+[2025-10-30 18:28:19] 尝试 3 失败: https://feeds.businessinsider.com/technology - 错误: RSS解析错误: <unknown>:2:0: syntax error
+[2025-10-30 18:28:19] https://feeds.businessinsider.com/technology: 经过3次尝试后仍然失败
+[2025-10-30 18:28:19] 正在抓取: https://rss.wallstreetcn.com/global
+[2025-10-30 18:28:19] 尝试 1/3: 抓取 https://rss.wallstreetcn.com/global
+[2025-10-30 18:28:20] 尝试 1 失败: https://rss.wallstreetcn.com/global - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:28:20] 2秒后重试...
+[2025-10-30 18:28:22] 尝试 2/3: 抓取 https://rss.wallstreetcn.com/global
+[2025-10-30 18:28:22] 尝试 2 失败: https://rss.wallstreetcn.com/global - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:28:22] 2秒后重试...
+[2025-10-30 18:28:24] 尝试 3/3: 抓取 https://rss.wallstreetcn.com/global
+[2025-10-30 18:28:24] 尝试 3 失败: https://rss.wallstreetcn.com/global - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:28:24] https://rss.wallstreetcn.com/global: 经过3次尝试后仍然失败
+[2025-10-30 18:28:24] 共获取 67 条相关新闻
+[2025-10-30 18:28:40] 日报已生成: news_daily_20251030.md
+[2025-10-30 18:29:33] 开始测试新闻源可用性...
+[2025-10-30 18:29:33] 测试新闻源: https://www.36kr.com/feed
+[2025-10-30 18:29:33] 尝试 1/3: 抓取 https://www.36kr.com/feed
+[2025-10-30 18:29:33] https://www.36kr.com/feed: 成功获取6条相关新闻
+[2025-10-30 18:29:33] 测试新闻源: https://rss.thepaper.cn/feed
+[2025-10-30 18:29:33] 尝试 1/3: 抓取 https://rss.thepaper.cn/feed
+[2025-10-30 18:29:33] 尝试 1 失败: https://rss.thepaper.cn/feed - 错误: RSS解析错误: <unknown>:2:0: not well-formed (invalid token)
+[2025-10-30 18:29:33] 2秒后重试...
+[2025-10-30 18:29:35] 尝试 2/3: 抓取 https://rss.thepaper.cn/feed
+[2025-10-30 18:29:35] 尝试 2 失败: https://rss.thepaper.cn/feed - 错误: RSS解析错误: <unknown>:2:0: not well-formed (invalid token)
+[2025-10-30 18:29:35] 2秒后重试...
+[2025-10-30 18:29:37] 尝试 3/3: 抓取 https://rss.thepaper.cn/feed
+[2025-10-30 18:29:37] 尝试 3 失败: https://rss.thepaper.cn/feed - 错误: RSS解析错误: <unknown>:2:0: not well-formed (invalid token)
+[2025-10-30 18:29:37] https://rss.thepaper.cn/feed: 经过3次尝试后仍然失败
+[2025-10-30 18:29:37] 测试新闻源: https://www.jiemian.com/lists/5.xml
+[2025-10-30 18:29:37] 尝试 1/3: 抓取 https://www.jiemian.com/lists/5.xml
+[2025-10-30 18:29:38] 尝试 1 失败: https://www.jiemian.com/lists/5.xml - 错误: RSS解析错误: <unknown>:16:2: mismatched tag
+[2025-10-30 18:29:38] 2秒后重试...
+[2025-10-30 18:29:40] 尝试 2/3: 抓取 https://www.jiemian.com/lists/5.xml
+[2025-10-30 18:29:40] 尝试 2 失败: https://www.jiemian.com/lists/5.xml - 错误: RSS解析错误: <unknown>:16:2: mismatched tag
+[2025-10-30 18:29:40] 2秒后重试...
+[2025-10-30 18:29:42] 尝试 3/3: 抓取 https://www.jiemian.com/lists/5.xml
+[2025-10-30 18:29:42] 尝试 3 失败: https://www.jiemian.com/lists/5.xml - 错误: RSS解析错误: <unknown>:16:2: mismatched tag
+[2025-10-30 18:29:42] https://www.jiemian.com/lists/5.xml: 经过3次尝试后仍然失败
+[2025-10-30 18:29:42] 测试新闻源: https://www.yicai.com/feed
+[2025-10-30 18:29:42] 尝试 1/3: 抓取 https://www.yicai.com/feed
+[2025-10-30 18:29:42] 尝试 1 失败: https://www.yicai.com/feed - 错误: RSS解析错误: <unknown>:2:522: not well-formed (invalid token)
+[2025-10-30 18:29:42] 2秒后重试...
+[2025-10-30 18:29:44] 尝试 2/3: 抓取 https://www.yicai.com/feed
+[2025-10-30 18:29:44] 尝试 2 失败: https://www.yicai.com/feed - 错误: RSS解析错误: <unknown>:2:522: not well-formed (invalid token)
+[2025-10-30 18:29:44] 2秒后重试...
+[2025-10-30 18:29:46] 尝试 3/3: 抓取 https://www.yicai.com/feed
+[2025-10-30 18:29:46] 尝试 3 失败: https://www.yicai.com/feed - 错误: RSS解析错误: <unknown>:2:522: not well-formed (invalid token)
+[2025-10-30 18:29:46] https://www.yicai.com/feed: 经过3次尝试后仍然失败
+[2025-10-30 18:29:46] 测试新闻源: https://rss.caixin.com/markets/finance
+[2025-10-30 18:29:46] 尝试 1/3: 抓取 https://rss.caixin.com/markets/finance
+[2025-10-30 18:29:47] 尝试 1 失败: https://rss.caixin.com/markets/finance - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:29:47] 2秒后重试...
+[2025-10-30 18:29:49] 尝试 2/3: 抓取 https://rss.caixin.com/markets/finance
+[2025-10-30 18:29:49] 尝试 2 失败: https://rss.caixin.com/markets/finance - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:29:49] 2秒后重试...
+[2025-10-30 18:29:51] 尝试 3/3: 抓取 https://rss.caixin.com/markets/finance
+[2025-10-30 18:29:51] 尝试 3 失败: https://rss.caixin.com/markets/finance - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:29:51] https://rss.caixin.com/markets/finance: 经过3次尝试后仍然失败
+[2025-10-30 18:29:51] 测试新闻源: https://www.huxiu.com/rss/0.xml
+[2025-10-30 18:29:51] 尝试 1/3: 抓取 https://www.huxiu.com/rss/0.xml
+[2025-10-30 18:29:51] https://www.huxiu.com/rss/0.xml: 成功获取1条相关新闻
+[2025-10-30 18:29:51] 测试新闻源: https://www.tmtpost.com/rss.xml
+[2025-10-30 18:29:51] 尝试 1/3: 抓取 https://www.tmtpost.com/rss.xml
+[2025-10-30 18:29:52] https://www.tmtpost.com/rss.xml: 成功获取4条相关新闻
+[2025-10-30 18:29:52] 测试新闻源: https://feeds.bbci.co.uk/news/rss.xml
+[2025-10-30 18:29:52] 尝试 1/3: 抓取 https://feeds.bbci.co.uk/news/rss.xml
+[2025-10-30 18:29:57] 尝试 1 失败: https://feeds.bbci.co.uk/news/rss.xml - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:29:57] 2秒后重试...
+[2025-10-30 18:29:59] 尝试 2/3: 抓取 https://feeds.bbci.co.uk/news/rss.xml
+[2025-10-30 18:30:04] 尝试 2 失败: https://feeds.bbci.co.uk/news/rss.xml - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:30:04] 2秒后重试...
+[2025-10-30 18:30:06] 尝试 3/3: 抓取 https://feeds.bbci.co.uk/news/rss.xml
+[2025-10-30 18:30:11] 尝试 3 失败: https://feeds.bbci.co.uk/news/rss.xml - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:30:11] https://feeds.bbci.co.uk/news/rss.xml: 经过3次尝试后仍然失败
+[2025-10-30 18:30:11] 测试新闻源: https://techcrunch.com/feed/
+[2025-10-30 18:30:11] 尝试 1/3: 抓取 https://techcrunch.com/feed/
+[2025-10-30 18:30:11] https://techcrunch.com/feed/: 成功获取8条相关新闻
+[2025-10-30 18:30:11] 测试新闻源: https://www.wired.com/feed/rss
+[2025-10-30 18:30:11] 尝试 1/3: 抓取 https://www.wired.com/feed/rss
+[2025-10-30 18:30:11] https://www.wired.com/feed/rss: 成功获取12条相关新闻
+[2025-10-30 18:30:11] 测试新闻源: https://www.ft.com/rss/home
+[2025-10-30 18:30:11] 尝试 1/3: 抓取 https://www.ft.com/rss/home
+[2025-10-30 18:30:13] https://www.ft.com/rss/home: 成功获取1条相关新闻
+[2025-10-30 18:30:13] 测试新闻源: https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml
+[2025-10-30 18:30:13] 尝试 1/3: 抓取 https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml
+[2025-10-30 18:30:13] https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml: 成功获取6条相关新闻
+[2025-10-30 18:30:13] 测试新闻源: https://feeds.npr.org/1004/rss.xml
+[2025-10-30 18:30:13] 尝试 1/3: 抓取 https://feeds.npr.org/1004/rss.xml
+[2025-10-30 18:30:14] https://feeds.npr.org/1004/rss.xml: 成功获取3条相关新闻
+[2025-10-30 18:30:14] 测试新闻源: https://rss.ap.org/rss/topnews
+[2025-10-30 18:30:14] 尝试 1/3: 抓取 https://rss.ap.org/rss/topnews
+[2025-10-30 18:30:14] 尝试 1 失败: https://rss.ap.org/rss/topnews - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:30:14] 2秒后重试...
+[2025-10-30 18:30:16] 尝试 2/3: 抓取 https://rss.ap.org/rss/topnews
+[2025-10-30 18:30:16] 尝试 2 失败: https://rss.ap.org/rss/topnews - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:30:16] 2秒后重试...
+[2025-10-30 18:30:18] 尝试 3/3: 抓取 https://rss.ap.org/rss/topnews
+[2025-10-30 18:30:18] 尝试 3 失败: https://rss.ap.org/rss/topnews - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:30:18] https://rss.ap.org/rss/topnews: 经过3次尝试后仍然失败
+[2025-10-30 18:30:18] 测试新闻源: https://www.theguardian.com/international/rss
+[2025-10-30 18:30:18] 尝试 1/3: 抓取 https://www.theguardian.com/international/rss
+[2025-10-30 18:30:18] https://www.theguardian.com/international/rss: 成功获取25条相关新闻
+[2025-10-30 18:30:18] 测试新闻源: https://www.bloomberg.com/technology/rss
+[2025-10-30 18:30:18] 尝试 1/3: 抓取 https://www.bloomberg.com/technology/rss
+[2025-10-30 18:30:20] 尝试 1 失败: https://www.bloomberg.com/technology/rss - 错误: RSS解析错误: <unknown>:3:72: not well-formed (invalid token)
+[2025-10-30 18:30:20] 2秒后重试...
+[2025-10-30 18:30:22] 尝试 2/3: 抓取 https://www.bloomberg.com/technology/rss
+[2025-10-30 18:30:23] 尝试 2 失败: https://www.bloomberg.com/technology/rss - 错误: RSS解析错误: <unknown>:3:72: not well-formed (invalid token)
+[2025-10-30 18:30:23] 2秒后重试...
+[2025-10-30 18:30:25] 尝试 3/3: 抓取 https://www.bloomberg.com/technology/rss
+[2025-10-30 18:30:26] 尝试 3 失败: https://www.bloomberg.com/technology/rss - 错误: RSS解析错误: <unknown>:3:72: not well-formed (invalid token)
+[2025-10-30 18:30:26] https://www.bloomberg.com/technology/rss: 经过3次尝试后仍然失败
+[2025-10-30 18:30:26] 测试新闻源: https://feeds.arstechnica.com/arstechnica/index
+[2025-10-30 18:30:26] 尝试 1/3: 抓取 https://feeds.arstechnica.com/arstechnica/index
+[2025-10-30 18:30:27] https://feeds.arstechnica.com/arstechnica/index: 成功获取6条相关新闻
+[2025-10-30 18:30:27] 新闻源可用性测试报告
+==================================================
+https://www.36kr.com/feed: 成功 (获取6条新闻)
+https://rss.thepaper.cn/feed: 失败 (获取0条新闻)
+https://www.jiemian.com/lists/5.xml: 失败 (获取0条新闻)
+https://www.yicai.com/feed: 失败 (获取0条新闻)
+https://rss.caixin.com/markets/finance: 失败 (获取0条新闻)
+https://www.huxiu.com/rss/0.xml: 成功 (获取1条新闻)
+https://www.tmtpost.com/rss.xml: 成功 (获取4条新闻)
+https://feeds.bbci.co.uk/news/rss.xml: 失败 (获取0条新闻)
+https://techcrunch.com/feed/: 成功 (获取8条新闻)
+https://www.wired.com/feed/rss: 成功 (获取12条新闻)
+https://www.ft.com/rss/home: 成功 (获取1条新闻)
+https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml: 成功 (获取6条新闻)
+https://feeds.npr.org/1004/rss.xml: 成功 (获取3条新闻)
+https://rss.ap.org/rss/topnews: 失败 (获取0条新闻)
+https://www.theguardian.com/international/rss: 成功 (获取25条新闻)
+https://www.bloomberg.com/technology/rss: 失败 (获取0条新闻)
+https://feeds.arstechnica.com/arstechnica/index: 成功 (获取6条新闻)
+
+总计: 10/17 个新闻源可用
+[2025-10-30 18:30:27] 开始抓取新闻...
+[2025-10-30 18:30:27] 正在抓取: https://www.36kr.com/feed
+[2025-10-30 18:30:27] 尝试 1/3: 抓取 https://www.36kr.com/feed
+[2025-10-30 18:30:27] https://www.36kr.com/feed: 成功获取6条相关新闻
+[2025-10-30 18:30:27] 正在抓取: https://rss.thepaper.cn/feed
+[2025-10-30 18:30:27] 尝试 1/3: 抓取 https://rss.thepaper.cn/feed
+[2025-10-30 18:30:27] 尝试 1 失败: https://rss.thepaper.cn/feed - 错误: RSS解析错误: <unknown>:2:0: not well-formed (invalid token)
+[2025-10-30 18:30:27] 2秒后重试...
+[2025-10-30 18:30:29] 尝试 2/3: 抓取 https://rss.thepaper.cn/feed
+[2025-10-30 18:30:29] 尝试 2 失败: https://rss.thepaper.cn/feed - 错误: RSS解析错误: <unknown>:2:0: not well-formed (invalid token)
+[2025-10-30 18:30:29] 2秒后重试...
+[2025-10-30 18:30:31] 尝试 3/3: 抓取 https://rss.thepaper.cn/feed
+[2025-10-30 18:30:31] 尝试 3 失败: https://rss.thepaper.cn/feed - 错误: RSS解析错误: <unknown>:2:0: not well-formed (invalid token)
+[2025-10-30 18:30:31] https://rss.thepaper.cn/feed: 经过3次尝试后仍然失败
+[2025-10-30 18:30:31] 正在抓取: https://www.jiemian.com/lists/5.xml
+[2025-10-30 18:30:31] 尝试 1/3: 抓取 https://www.jiemian.com/lists/5.xml
+[2025-10-30 18:30:32] 尝试 1 失败: https://www.jiemian.com/lists/5.xml - 错误: RSS解析错误: <unknown>:16:2: mismatched tag
+[2025-10-30 18:30:32] 2秒后重试...
+[2025-10-30 18:30:34] 尝试 2/3: 抓取 https://www.jiemian.com/lists/5.xml
+[2025-10-30 18:30:34] 尝试 2 失败: https://www.jiemian.com/lists/5.xml - 错误: RSS解析错误: <unknown>:16:2: mismatched tag
+[2025-10-30 18:30:34] 2秒后重试...
+[2025-10-30 18:30:36] 尝试 3/3: 抓取 https://www.jiemian.com/lists/5.xml
+[2025-10-30 18:30:37] 尝试 3 失败: https://www.jiemian.com/lists/5.xml - 错误: RSS解析错误: <unknown>:16:2: mismatched tag
+[2025-10-30 18:30:37] https://www.jiemian.com/lists/5.xml: 经过3次尝试后仍然失败
+[2025-10-30 18:30:37] 正在抓取: https://www.yicai.com/feed
+[2025-10-30 18:30:37] 尝试 1/3: 抓取 https://www.yicai.com/feed
+[2025-10-30 18:30:37] 尝试 1 失败: https://www.yicai.com/feed - 错误: RSS解析错误: <unknown>:2:522: not well-formed (invalid token)
+[2025-10-30 18:30:37] 2秒后重试...
+[2025-10-30 18:30:39] 尝试 2/3: 抓取 https://www.yicai.com/feed
+[2025-10-30 18:30:39] 尝试 2 失败: https://www.yicai.com/feed - 错误: RSS解析错误: <unknown>:2:522: not well-formed (invalid token)
+[2025-10-30 18:30:39] 2秒后重试...
+[2025-10-30 18:30:41] 尝试 3/3: 抓取 https://www.yicai.com/feed
+[2025-10-30 18:30:41] 尝试 3 失败: https://www.yicai.com/feed - 错误: RSS解析错误: <unknown>:2:522: not well-formed (invalid token)
+[2025-10-30 18:30:41] https://www.yicai.com/feed: 经过3次尝试后仍然失败
+[2025-10-30 18:30:41] 正在抓取: https://rss.caixin.com/markets/finance
+[2025-10-30 18:30:41] 尝试 1/3: 抓取 https://rss.caixin.com/markets/finance
+[2025-10-30 18:30:41] 尝试 1 失败: https://rss.caixin.com/markets/finance - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:30:41] 2秒后重试...
+[2025-10-30 18:30:43] 尝试 2/3: 抓取 https://rss.caixin.com/markets/finance
+[2025-10-30 18:30:43] 尝试 2 失败: https://rss.caixin.com/markets/finance - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:30:43] 2秒后重试...
+[2025-10-30 18:30:45] 尝试 3/3: 抓取 https://rss.caixin.com/markets/finance
+[2025-10-30 18:30:45] 尝试 3 失败: https://rss.caixin.com/markets/finance - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:30:45] https://rss.caixin.com/markets/finance: 经过3次尝试后仍然失败
+[2025-10-30 18:30:45] 正在抓取: https://www.huxiu.com/rss/0.xml
+[2025-10-30 18:30:45] 尝试 1/3: 抓取 https://www.huxiu.com/rss/0.xml
+[2025-10-30 18:30:45] https://www.huxiu.com/rss/0.xml: 成功获取1条相关新闻
+[2025-10-30 18:30:45] 正在抓取: https://www.tmtpost.com/rss.xml
+[2025-10-30 18:30:45] 尝试 1/3: 抓取 https://www.tmtpost.com/rss.xml
+[2025-10-30 18:30:47] https://www.tmtpost.com/rss.xml: 成功获取4条相关新闻
+[2025-10-30 18:30:47] 正在抓取: https://feeds.bbci.co.uk/news/rss.xml
+[2025-10-30 18:30:47] 尝试 1/3: 抓取 https://feeds.bbci.co.uk/news/rss.xml
+[2025-10-30 18:30:52] 尝试 1 失败: https://feeds.bbci.co.uk/news/rss.xml - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:30:52] 2秒后重试...
+[2025-10-30 18:30:54] 尝试 2/3: 抓取 https://feeds.bbci.co.uk/news/rss.xml
+[2025-10-30 18:30:59] 尝试 2 失败: https://feeds.bbci.co.uk/news/rss.xml - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:30:59] 2秒后重试...
+[2025-10-30 18:31:01] 尝试 3/3: 抓取 https://feeds.bbci.co.uk/news/rss.xml
+[2025-10-30 18:31:06] 尝试 3 失败: https://feeds.bbci.co.uk/news/rss.xml - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:31:06] https://feeds.bbci.co.uk/news/rss.xml: 经过3次尝试后仍然失败
+[2025-10-30 18:31:06] 正在抓取: https://techcrunch.com/feed/
+[2025-10-30 18:31:06] 尝试 1/3: 抓取 https://techcrunch.com/feed/
+[2025-10-30 18:31:06] https://techcrunch.com/feed/: 成功获取8条相关新闻
+[2025-10-30 18:31:06] 正在抓取: https://www.wired.com/feed/rss
+[2025-10-30 18:31:06] 尝试 1/3: 抓取 https://www.wired.com/feed/rss
+[2025-10-30 18:31:06] https://www.wired.com/feed/rss: 成功获取12条相关新闻
+[2025-10-30 18:31:06] 正在抓取: https://www.ft.com/rss/home
+[2025-10-30 18:31:06] 尝试 1/3: 抓取 https://www.ft.com/rss/home
+[2025-10-30 18:31:07] https://www.ft.com/rss/home: 成功获取1条相关新闻
+[2025-10-30 18:31:07] 正在抓取: https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml
+[2025-10-30 18:31:07] 尝试 1/3: 抓取 https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml
+[2025-10-30 18:31:07] https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml: 成功获取6条相关新闻
+[2025-10-30 18:31:07] 正在抓取: https://feeds.npr.org/1004/rss.xml
+[2025-10-30 18:31:07] 尝试 1/3: 抓取 https://feeds.npr.org/1004/rss.xml
+[2025-10-30 18:31:08] https://feeds.npr.org/1004/rss.xml: 成功获取3条相关新闻
+[2025-10-30 18:31:08] 正在抓取: https://rss.ap.org/rss/topnews
+[2025-10-30 18:31:08] 尝试 1/3: 抓取 https://rss.ap.org/rss/topnews
+[2025-10-30 18:31:08] 尝试 1 失败: https://rss.ap.org/rss/topnews - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:31:08] 2秒后重试...
+[2025-10-30 18:31:10] 尝试 2/3: 抓取 https://rss.ap.org/rss/topnews
+[2025-10-30 18:31:10] 尝试 2 失败: https://rss.ap.org/rss/topnews - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:31:10] 2秒后重试...
+[2025-10-30 18:31:12] 尝试 3/3: 抓取 https://rss.ap.org/rss/topnews
+[2025-10-30 18:31:12] 尝试 3 失败: https://rss.ap.org/rss/topnews - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:31:12] https://rss.ap.org/rss/topnews: 经过3次尝试后仍然失败
+[2025-10-30 18:31:12] 正在抓取: https://www.theguardian.com/international/rss
+[2025-10-30 18:31:12] 尝试 1/3: 抓取 https://www.theguardian.com/international/rss
+[2025-10-30 18:31:12] https://www.theguardian.com/international/rss: 成功获取25条相关新闻
+[2025-10-30 18:31:12] 正在抓取: https://www.bloomberg.com/technology/rss
+[2025-10-30 18:31:12] 尝试 1/3: 抓取 https://www.bloomberg.com/technology/rss
+[2025-10-30 18:31:12] 尝试 1 失败: https://www.bloomberg.com/technology/rss - 错误: RSS解析错误: <unknown>:196:10: mismatched tag
+[2025-10-30 18:31:12] 2秒后重试...
+[2025-10-30 18:31:14] 尝试 2/3: 抓取 https://www.bloomberg.com/technology/rss
+[2025-10-30 18:31:15] 尝试 2 失败: https://www.bloomberg.com/technology/rss - 错误: RSS解析错误: <unknown>:196:10: mismatched tag
+[2025-10-30 18:31:15] 2秒后重试...
+[2025-10-30 18:31:17] 尝试 3/3: 抓取 https://www.bloomberg.com/technology/rss
+[2025-10-30 18:31:17] 尝试 3 失败: https://www.bloomberg.com/technology/rss - 错误: RSS解析错误: <unknown>:196:10: mismatched tag
+[2025-10-30 18:31:17] https://www.bloomberg.com/technology/rss: 经过3次尝试后仍然失败
+[2025-10-30 18:31:17] 正在抓取: https://feeds.arstechnica.com/arstechnica/index
+[2025-10-30 18:31:17] 尝试 1/3: 抓取 https://feeds.arstechnica.com/arstechnica/index
+[2025-10-30 18:31:17] https://feeds.arstechnica.com/arstechnica/index: 成功获取6条相关新闻
+[2025-10-30 18:31:17] 共获取 72 条相关新闻
+[2025-10-30 18:31:35] 日报已生成: news_daily_20251030.md
+[2025-10-30 18:41:04] 开始测试新闻源可用性...
+[2025-10-30 18:41:04] 测试新闻源: https://www.36kr.com/feed
+[2025-10-30 18:41:04] 尝试 1/3: 抓取 https://www.36kr.com/feed
+[2025-10-30 18:41:05] https://www.36kr.com/feed: 成功获取8条相关新闻
+[2025-10-30 18:41:05] 测试新闻源: https://rss.thepaper.cn/feed
+[2025-10-30 18:41:05] 尝试 1/3: 抓取 https://rss.thepaper.cn/feed
+[2025-10-30 18:41:05] 尝试 1 失败: https://rss.thepaper.cn/feed - 错误: RSS解析错误: <unknown>:2:0: not well-formed (invalid token)
+[2025-10-30 18:41:05] 2秒后重试...
+[2025-10-30 18:41:07] 尝试 2/3: 抓取 https://rss.thepaper.cn/feed
+[2025-10-30 18:41:07] 尝试 2 失败: https://rss.thepaper.cn/feed - 错误: RSS解析错误: <unknown>:2:0: not well-formed (invalid token)
+[2025-10-30 18:41:07] 2秒后重试...
+[2025-10-30 18:41:09] 尝试 3/3: 抓取 https://rss.thepaper.cn/feed
+[2025-10-30 18:41:09] 尝试 3 失败: https://rss.thepaper.cn/feed - 错误: RSS解析错误: <unknown>:2:0: not well-formed (invalid token)
+[2025-10-30 18:41:09] https://rss.thepaper.cn/feed: 经过3次尝试后仍然失败
+[2025-10-30 18:41:09] 测试新闻源: https://www.jiemian.com/lists/5.xml
+[2025-10-30 18:41:09] 尝试 1/3: 抓取 https://www.jiemian.com/lists/5.xml
+[2025-10-30 18:41:09] 尝试 1 失败: https://www.jiemian.com/lists/5.xml - 错误: RSS解析错误: <unknown>:16:2: mismatched tag
+[2025-10-30 18:41:09] 2秒后重试...
+[2025-10-30 18:41:11] 尝试 2/3: 抓取 https://www.jiemian.com/lists/5.xml
+[2025-10-30 18:41:12] 尝试 2 失败: https://www.jiemian.com/lists/5.xml - 错误: RSS解析错误: <unknown>:16:2: mismatched tag
+[2025-10-30 18:41:12] 2秒后重试...
+[2025-10-30 18:41:14] 尝试 3/3: 抓取 https://www.jiemian.com/lists/5.xml
+[2025-10-30 18:41:14] 尝试 3 失败: https://www.jiemian.com/lists/5.xml - 错误: RSS解析错误: <unknown>:16:2: mismatched tag
+[2025-10-30 18:41:14] https://www.jiemian.com/lists/5.xml: 经过3次尝试后仍然失败
+[2025-10-30 18:41:14] 测试新闻源: https://www.yicai.com/feed
+[2025-10-30 18:41:14] 尝试 1/3: 抓取 https://www.yicai.com/feed
+[2025-10-30 18:41:14] 尝试 1 失败: https://www.yicai.com/feed - 错误: RSS解析错误: <unknown>:2:522: not well-formed (invalid token)
+[2025-10-30 18:41:14] 2秒后重试...
+[2025-10-30 18:41:16] 尝试 2/3: 抓取 https://www.yicai.com/feed
+[2025-10-30 18:41:16] 尝试 2 失败: https://www.yicai.com/feed - 错误: RSS解析错误: <unknown>:2:522: not well-formed (invalid token)
+[2025-10-30 18:41:16] 2秒后重试...
+[2025-10-30 18:41:18] 尝试 3/3: 抓取 https://www.yicai.com/feed
+[2025-10-30 18:41:19] 尝试 3 失败: https://www.yicai.com/feed - 错误: RSS解析错误: <unknown>:2:522: not well-formed (invalid token)
+[2025-10-30 18:41:19] https://www.yicai.com/feed: 经过3次尝试后仍然失败
+[2025-10-30 18:41:19] 测试新闻源: https://rss.caixin.com/markets/finance
+[2025-10-30 18:41:19] 尝试 1/3: 抓取 https://rss.caixin.com/markets/finance
+[2025-10-30 18:41:19] 尝试 1 失败: https://rss.caixin.com/markets/finance - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:41:19] 2秒后重试...
+[2025-10-30 18:41:21] 尝试 2/3: 抓取 https://rss.caixin.com/markets/finance
+[2025-10-30 18:41:21] 尝试 2 失败: https://rss.caixin.com/markets/finance - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:41:21] 2秒后重试...
+[2025-10-30 18:41:23] 尝试 3/3: 抓取 https://rss.caixin.com/markets/finance
+[2025-10-30 18:41:23] 尝试 3 失败: https://rss.caixin.com/markets/finance - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:41:23] https://rss.caixin.com/markets/finance: 经过3次尝试后仍然失败
+[2025-10-30 18:41:23] 测试新闻源: https://www.huxiu.com/rss/0.xml
+[2025-10-30 18:41:23] 尝试 1/3: 抓取 https://www.huxiu.com/rss/0.xml
+[2025-10-30 18:41:23] https://www.huxiu.com/rss/0.xml: 成功获取1条相关新闻
+[2025-10-30 18:41:23] 测试新闻源: https://www.tmtpost.com/rss.xml
+[2025-10-30 18:41:23] 尝试 1/3: 抓取 https://www.tmtpost.com/rss.xml
+[2025-10-30 18:41:24] https://www.tmtpost.com/rss.xml: 成功获取7条相关新闻
+[2025-10-30 18:41:24] 测试新闻源: https://feeds.bbci.co.uk/news/rss.xml
+[2025-10-30 18:41:24] 尝试 1/3: 抓取 https://feeds.bbci.co.uk/news/rss.xml
+[2025-10-30 18:41:29] 尝试 1 失败: https://feeds.bbci.co.uk/news/rss.xml - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:41:29] 2秒后重试...
+[2025-10-30 18:41:31] 尝试 2/3: 抓取 https://feeds.bbci.co.uk/news/rss.xml
+[2025-10-30 18:41:32] https://feeds.bbci.co.uk/news/rss.xml: 成功获取4条相关新闻
+[2025-10-30 18:41:32] 测试新闻源: https://techcrunch.com/feed/
+[2025-10-30 18:41:32] 尝试 1/3: 抓取 https://techcrunch.com/feed/
+[2025-10-30 18:41:32] https://techcrunch.com/feed/: 成功获取8条相关新闻
+[2025-10-30 18:41:32] 测试新闻源: https://www.wired.com/feed/rss
+[2025-10-30 18:41:32] 尝试 1/3: 抓取 https://www.wired.com/feed/rss
+[2025-10-30 18:41:32] https://www.wired.com/feed/rss: 成功获取12条相关新闻
+[2025-10-30 18:41:32] 测试新闻源: https://www.ft.com/rss/home
+[2025-10-30 18:41:32] 尝试 1/3: 抓取 https://www.ft.com/rss/home
+[2025-10-30 18:41:33] https://www.ft.com/rss/home: 成功获取1条相关新闻
+[2025-10-30 18:41:33] 测试新闻源: https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml
+[2025-10-30 18:41:33] 尝试 1/3: 抓取 https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml
+[2025-10-30 18:41:33] https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml: 成功获取6条相关新闻
+[2025-10-30 18:41:33] 测试新闻源: https://feeds.npr.org/1004/rss.xml
+[2025-10-30 18:41:33] 尝试 1/3: 抓取 https://feeds.npr.org/1004/rss.xml
+[2025-10-30 18:41:34] https://feeds.npr.org/1004/rss.xml: 成功获取3条相关新闻
+[2025-10-30 18:41:34] 测试新闻源: https://www.theguardian.com/international/rss
+[2025-10-30 18:41:34] 尝试 1/3: 抓取 https://www.theguardian.com/international/rss
+[2025-10-30 18:41:35] https://www.theguardian.com/international/rss: 成功获取25条相关新闻
+[2025-10-30 18:41:35] 测试新闻源: https://feeds.arstechnica.com/arstechnica/index
+[2025-10-30 18:41:35] 尝试 1/3: 抓取 https://feeds.arstechnica.com/arstechnica/index
+[2025-10-30 18:41:36] https://feeds.arstechnica.com/arstechnica/index: 成功获取6条相关新闻
+[2025-10-30 18:41:36] 新闻源可用性测试报告
+==================================================
+https://www.36kr.com/feed: 成功 (获取8条新闻)
+https://rss.thepaper.cn/feed: 失败 (获取0条新闻)
+https://www.jiemian.com/lists/5.xml: 失败 (获取0条新闻)
+https://www.yicai.com/feed: 失败 (获取0条新闻)
+https://rss.caixin.com/markets/finance: 失败 (获取0条新闻)
+https://www.huxiu.com/rss/0.xml: 成功 (获取1条新闻)
+https://www.tmtpost.com/rss.xml: 成功 (获取7条新闻)
+https://feeds.bbci.co.uk/news/rss.xml: 成功 (获取4条新闻)
+https://techcrunch.com/feed/: 成功 (获取8条新闻)
+https://www.wired.com/feed/rss: 成功 (获取12条新闻)
+https://www.ft.com/rss/home: 成功 (获取1条新闻)
+https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml: 成功 (获取6条新闻)
+https://feeds.npr.org/1004/rss.xml: 成功 (获取3条新闻)
+https://www.theguardian.com/international/rss: 成功 (获取25条新闻)
+https://feeds.arstechnica.com/arstechnica/index: 成功 (获取6条新闻)
+
+总计: 11/15 个新闻源可用
+[2025-10-30 18:41:36] 开始抓取新闻...
+[2025-10-30 18:41:36] 正在抓取: https://www.36kr.com/feed
+[2025-10-30 18:41:36] 尝试 1/3: 抓取 https://www.36kr.com/feed
+[2025-10-30 18:41:36] https://www.36kr.com/feed: 成功获取8条相关新闻
+[2025-10-30 18:41:36] 正在抓取: https://rss.thepaper.cn/feed
+[2025-10-30 18:41:36] 尝试 1/3: 抓取 https://rss.thepaper.cn/feed
+[2025-10-30 18:41:36] 尝试 1 失败: https://rss.thepaper.cn/feed - 错误: RSS解析错误: <unknown>:2:0: not well-formed (invalid token)
+[2025-10-30 18:41:36] 2秒后重试...
+[2025-10-30 18:41:38] 尝试 2/3: 抓取 https://rss.thepaper.cn/feed
+[2025-10-30 18:41:38] 尝试 2 失败: https://rss.thepaper.cn/feed - 错误: RSS解析错误: <unknown>:2:0: not well-formed (invalid token)
+[2025-10-30 18:41:38] 2秒后重试...
+[2025-10-30 18:41:40] 尝试 3/3: 抓取 https://rss.thepaper.cn/feed
+[2025-10-30 18:41:40] 尝试 3 失败: https://rss.thepaper.cn/feed - 错误: RSS解析错误: <unknown>:2:0: not well-formed (invalid token)
+[2025-10-30 18:41:40] https://rss.thepaper.cn/feed: 经过3次尝试后仍然失败
+[2025-10-30 18:41:40] 正在抓取: https://www.jiemian.com/lists/5.xml
+[2025-10-30 18:41:40] 尝试 1/3: 抓取 https://www.jiemian.com/lists/5.xml
+[2025-10-30 18:41:41] 尝试 1 失败: https://www.jiemian.com/lists/5.xml - 错误: RSS解析错误: <unknown>:16:2: mismatched tag
+[2025-10-30 18:41:41] 2秒后重试...
+[2025-10-30 18:41:43] 尝试 2/3: 抓取 https://www.jiemian.com/lists/5.xml
+[2025-10-30 18:41:43] 尝试 2 失败: https://www.jiemian.com/lists/5.xml - 错误: RSS解析错误: <unknown>:16:2: mismatched tag
+[2025-10-30 18:41:43] 2秒后重试...
+[2025-10-30 18:41:45] 尝试 3/3: 抓取 https://www.jiemian.com/lists/5.xml
+[2025-10-30 18:41:45] 尝试 3 失败: https://www.jiemian.com/lists/5.xml - 错误: RSS解析错误: <unknown>:16:2: mismatched tag
+[2025-10-30 18:41:45] https://www.jiemian.com/lists/5.xml: 经过3次尝试后仍然失败
+[2025-10-30 18:41:45] 正在抓取: https://www.yicai.com/feed
+[2025-10-30 18:41:45] 尝试 1/3: 抓取 https://www.yicai.com/feed
+[2025-10-30 18:41:46] 尝试 1 失败: https://www.yicai.com/feed - 错误: RSS解析错误: <unknown>:2:522: not well-formed (invalid token)
+[2025-10-30 18:41:46] 2秒后重试...
+[2025-10-30 18:41:48] 尝试 2/3: 抓取 https://www.yicai.com/feed
+[2025-10-30 18:41:48] 尝试 2 失败: https://www.yicai.com/feed - 错误: RSS解析错误: <unknown>:2:522: not well-formed (invalid token)
+[2025-10-30 18:41:48] 2秒后重试...
+[2025-10-30 18:41:50] 尝试 3/3: 抓取 https://www.yicai.com/feed
+[2025-10-30 18:41:50] 尝试 3 失败: https://www.yicai.com/feed - 错误: RSS解析错误: <unknown>:2:522: not well-formed (invalid token)
+[2025-10-30 18:41:50] https://www.yicai.com/feed: 经过3次尝试后仍然失败
+[2025-10-30 18:41:50] 正在抓取: https://rss.caixin.com/markets/finance
+[2025-10-30 18:41:50] 尝试 1/3: 抓取 https://rss.caixin.com/markets/finance
+[2025-10-30 18:41:50] 尝试 1 失败: https://rss.caixin.com/markets/finance - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:41:50] 2秒后重试...
+[2025-10-30 18:41:52] 尝试 2/3: 抓取 https://rss.caixin.com/markets/finance
+[2025-10-30 18:41:52] 尝试 2 失败: https://rss.caixin.com/markets/finance - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:41:52] 2秒后重试...
+[2025-10-30 18:41:54] 尝试 3/3: 抓取 https://rss.caixin.com/markets/finance
+[2025-10-30 18:41:54] 尝试 3 失败: https://rss.caixin.com/markets/finance - 错误: RSS解析错误: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+[2025-10-30 18:41:54] https://rss.caixin.com/markets/finance: 经过3次尝试后仍然失败
+[2025-10-30 18:41:54] 正在抓取: https://www.huxiu.com/rss/0.xml
+[2025-10-30 18:41:54] 尝试 1/3: 抓取 https://www.huxiu.com/rss/0.xml
+[2025-10-30 18:41:54] https://www.huxiu.com/rss/0.xml: 成功获取1条相关新闻
+[2025-10-30 18:41:54] 正在抓取: https://www.tmtpost.com/rss.xml
+[2025-10-30 18:41:54] 尝试 1/3: 抓取 https://www.tmtpost.com/rss.xml
+[2025-10-30 18:41:55] https://www.tmtpost.com/rss.xml: 成功获取7条相关新闻
+[2025-10-30 18:41:55] 正在抓取: https://feeds.bbci.co.uk/news/rss.xml
+[2025-10-30 18:41:55] 尝试 1/3: 抓取 https://feeds.bbci.co.uk/news/rss.xml
+[2025-10-30 18:41:55] https://feeds.bbci.co.uk/news/rss.xml: 成功获取4条相关新闻
+[2025-10-30 18:41:55] 正在抓取: https://techcrunch.com/feed/
+[2025-10-30 18:41:55] 尝试 1/3: 抓取 https://techcrunch.com/feed/
+[2025-10-30 18:41:56] https://techcrunch.com/feed/: 成功获取8条相关新闻
+[2025-10-30 18:41:56] 正在抓取: https://www.wired.com/feed/rss
+[2025-10-30 18:41:56] 尝试 1/3: 抓取 https://www.wired.com/feed/rss
+[2025-10-30 18:41:56] https://www.wired.com/feed/rss: 成功获取12条相关新闻
+[2025-10-30 18:41:56] 正在抓取: https://www.ft.com/rss/home
+[2025-10-30 18:41:56] 尝试 1/3: 抓取 https://www.ft.com/rss/home
+[2025-10-30 18:41:56] https://www.ft.com/rss/home: 成功获取1条相关新闻
+[2025-10-30 18:41:56] 正在抓取: https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml
+[2025-10-30 18:41:56] 尝试 1/3: 抓取 https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml
+[2025-10-30 18:41:57] https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml: 成功获取6条相关新闻
+[2025-10-30 18:41:57] 正在抓取: https://feeds.npr.org/1004/rss.xml
+[2025-10-30 18:41:57] 尝试 1/3: 抓取 https://feeds.npr.org/1004/rss.xml
+[2025-10-30 18:41:57] https://feeds.npr.org/1004/rss.xml: 成功获取3条相关新闻
+[2025-10-30 18:41:57] 正在抓取: https://www.theguardian.com/international/rss
+[2025-10-30 18:41:57] 尝试 1/3: 抓取 https://www.theguardian.com/international/rss
+[2025-10-30 18:41:57] https://www.theguardian.com/international/rss: 成功获取25条相关新闻
+[2025-10-30 18:41:57] 正在抓取: https://feeds.arstechnica.com/arstechnica/index
+[2025-10-30 18:41:57] 尝试 1/3: 抓取 https://feeds.arstechnica.com/arstechnica/index
+[2025-10-30 18:41:57] https://feeds.arstechnica.com/arstechnica/index: 成功获取6条相关新闻
+[2025-10-30 18:41:57] 共获取 81 条相关新闻
+[2025-10-30 18:42:28] 日报已生成: news_daily_20251030.md

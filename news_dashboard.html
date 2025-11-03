@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新闻AI分析仪表板</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 头部 -->
+        <div class="header">
+            <h1><i class="fas fa-newspaper"></i> AI新闻动态简报</h1>
+            <div class="controls">
+                <button class="refresh-btn" onclick="refreshNews()">
+                    <i class="fas fa-sync-alt"></i> 刷新新闻
+                </button>
+                <button class="theme-toggle" onclick="toggleTheme()">
+                    <i class="fas fa-moon"></i> 夜间模式
+                </button>
+                <button class="save-pdf-btn" id="savePdfBtn">
+                    <i class="fas fa-file-pdf"></i> 保存为PDF
+                </button>
+                <select id="historySelect" class="history-select">
+                    <option value="">选择历史数据</option>
+                </select>
+                <select id="storageSelect" class="storage-select">
+                    <option value="local">本地存储</option>
+                    <option value="browser">浏览器存储</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- AI总结展示区域 -->
+        <div class="ai-summary-card" id="aiSummary">
+            <div class="ai-summary-header">
+                <h2><i class="fas fa-robot"></i> AI新闻总结</h2>
+                <button class="refresh-summary-btn" onclick="loadAISummary()">
+                    <i class="fas fa-redo"></i> 刷新总结
+                </button>
+            </div>
+            <div class="ai-summary-content" id="aiSummaryContent">
+                <p>正在加载AI总结...</p>
+            </div>
+        </div>
+
+        <!-- 加载状态 -->
+        <div class="loading" id="loading">
+            <i class="fas fa-spinner"></i> 正在加载最新新闻...
+        </div>
+
+        <!-- 仪表板网格 -->
+        <div class="dashboard-grid">
+            <!-- 新闻内容区域 -->
+            <div class="news-content" id="newsContent">
+                <!-- 新闻内容将通过JavaScript动态加载 -->
+            </div>
+
+            <!-- 侧边栏 -->
+            <div class="sidebar">
+                <!-- 统计卡片 -->
+                <div class="stats-card">
+                    <h3><i class="fas fa-chart-bar"></i> 新闻统计</h3>
+                    <div class="stat-item">
+                        <span>今日新闻总数</span>
+                        <span class="stat-value" id="totalNews">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span>新闻源数量</span>
+                        <span class="stat-value" id="sourceCount">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span>最后更新时间</span>
+                        <span class="stat-value" id="lastUpdate">-</span>
+                    </div>
+                </div>
+
+                <!-- 图表卡片 -->
+                <div class="chart-card">
+                    <h3><i class="fas fa-chart-pie"></i> 新闻分类分布</h3>
+                    <div class="chart-header">
+                        <button class="outline-toggle" onclick="toggleOutlineView()">大纲</button>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="categoryChart"></canvas>
+                    </div>
+                    <div class="chart-legend-container" id="chartLegend">
+                        <!-- 自定义图例将在这里生成 -->
+                    </div>
+                    <div class="wordcloud-container">
+                        <h3>新闻词云</h3>
+                        <div id="wordcloudImage">
+                            <p>词云正在生成中...</p>
+                        </div>
+                        <button id="refreshWordcloud" class="wordcloud-refresh-btn">刷新词云</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+{
+  "news_sources": [
+    {
+      "name": "36氪",
+      "url": "https://www.36kr.com/feed",
+      "category": "科技新闻",
+      "update_frequency": "每日",
+      "description": "中国领先的科技媒体，覆盖创新创业、投资、人工智能等领域"
+    },
+    {
+      "name": "澎湃新闻",
+      "url": "https://rss.thepaper.cn/feed",
+      "category": "综合新闻",
+      "update_frequency": "每日",
+      "description": "上海报业集团旗下新媒体，以深度报道和时政新闻为主"
+    },
+    {
+      "name": "界面新闻",
+      "url": "https://www.jiemian.com/lists/5.xml",
+      "category": "财经新闻",
+      "update_frequency": "每日",
+      "description": "专注于财经、商业和科技新闻的数字化媒体"
+    },
+    {
+      "name": "第一财经",
+      "url": "https://www.yicai.com/feed",
+      "category": "财经新闻",
+      "update_frequency": "每日",
+      "description": "中国最具影响力的财经媒体，覆盖宏观经济、金融市场等"
+    },
+    {
+      "name": "财新网财经",
+      "url": "https://rss.caixin.com/markets/finance",
+      "category": "财经新闻",
+      "update_frequency": "每日",
+      "description": "权威财经媒体，以深度调查和数据分析见长"
+    },
+    {
+      "name": "虎嗅网",
+      "url": "https://www.huxiu.com/rss/0.xml",
+      "category": "科技新闻",
+      "update_frequency": "每日",
+      "description": "聚焦科技创新、商业趋势的深度分析媒体"
+    },
+    {
+      "name": "钛媒体",
+      "url": "https://www.tmtpost.com/rss.xml",
+      "category": "科技新闻",
+      "update_frequency": "每日",
+      "description": "专注于TMT（科技、媒体、通信）领域的创新报道"
+    },
+    {
+      "name": "BBC News",
+      "url": "https://feeds.bbci.co.uk/news/rss.xml",
+      "category": "国际新闻",
+      "update_frequency": "每小时",
+      "description": "英国广播公司，提供全球新闻覆盖，以客观报道著称"
+    },
+    {
+      "name": "TechCrunch",
+      "url": "https://techcrunch.com/feed/",
+      "category": "科技新闻",
+      "update_frequency": "每日",
+      "description": "全球知名科技媒体，专注于 startups 和创新技术"
+    },
+    {
+      "name": "Wired",
+      "url": "https://www.wired.com/feed/rss",
+      "category": "科技新闻",
+      "update_frequency": "每日",
+      "description": "美国科技杂志，涵盖科技、文化、商业的交叉领域"
+    },
+    {
+      "name": "Financial Times",
+      "url": "https://www.ft.com/rss/home",
+      "category": "财经新闻",
+      "update_frequency": "每日",
+      "description": "英国金融时报，全球领先的商业新闻来源"
+    },
+    {
+      "name": "New York Times Technology",
+      "url": "https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml",
+      "category": "科技新闻",
+      "update_frequency": "每日",
+      "description": "纽约时报科技版块，报道科技行业动态和创新"
+    },
+    {
+      "name": "NPR Business",
+      "url": "https://feeds.npr.org/1004/rss.xml",
+      "category": "财经新闻",
+      "update_frequency": "每日",
+      "description": "美国国家公共电台商业新闻，聚焦经济和市场"
+    },
+    {
+      "name": "The Guardian International",
+      "url": "https://www.theguardian.com/international/rss",
+      "category": "国际新闻",
+      "update_frequency": "每日",
+      "description": "英国卫报国际版，提供全球新闻和深度分析"
+    },
+    {
+      "name": "Ars Technica",
+      "url": "https://feeds.arstechnica.com/arstechnica/index",
+      "category": "科技新闻",
+      "update_frequency": "每日",
+      "description": "美国科技网站，以深度技术分析和评论见长"
+    }
+  ]
+}
