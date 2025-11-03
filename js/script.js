@@ -5,7 +5,6 @@ let currentTheme = 'light';
 function toggleTheme() {
     currentTheme = currentTheme === 'light' ? 'dark' : 'light';
     document.documentElement.setAttribute('data-theme', currentTheme);
-    localStorage.setItem('newsDashboardTheme', currentTheme);
     
     // 更新主题图标
     const themeIcon = document.querySelector('.theme-toggle i');
@@ -16,14 +15,13 @@ function toggleTheme() {
 
 // 初始化主题
 function initTheme() {
-    const savedTheme = localStorage.getItem('newsDashboardTheme') || 'light';
-    currentTheme = savedTheme;
+    currentTheme = 'light';
     document.documentElement.setAttribute('data-theme', currentTheme);
     
     // 设置主题图标
     const themeIcon = document.querySelector('.theme-toggle i');
     if (themeIcon) {
-        themeIcon.className = currentTheme === 'light' ? 'fas fa-moon' : 'fas fa-sun';
+        themeIcon.className = 'fas fa-moon';
     }
 }
 
@@ -616,55 +614,75 @@ function renderDashboard(data) {
 
 // 渲染新闻分类饼状图
 function renderCategoryChart(categoriesDistribution) {
-    const ctx = document.getElementById('categoryChart').getContext('2d');
+    try {
+        const ctx = document.getElementById('categoryChart').getContext('2d');
+        if (!ctx) {
+            console.error('饼状图画布元素未找到');
+            return;
+        }
 
-    // 如果存在旧图表实例，则销毁它
-    if (currentChart) {
-        currentChart.destroy();
-    }
+        // 验证数据格式
+        if (!categoriesDistribution || typeof categoriesDistribution !== 'object' || Object.keys(categoriesDistribution).length === 0) {
+            console.warn('饼状图数据为空或格式不正确');
+            document.getElementById('categoryChart').innerHTML = '<p style="text-align: center; color: var(--text-secondary);">暂无分类数据</p>';
+            return;
+        }
 
-    const labels = Object.keys(categoriesDistribution);
-    const values = Object.values(categoriesDistribution);
-    const backgroundColors = generateRandomColors(labels.length);
+        // 如果存在旧图表实例，则销毁它
+        if (currentChart) {
+            currentChart.destroy();
+        }
 
-    currentChart = new Chart(ctx, {
-        type: 'pie',
-        data: {
-            labels: labels,
-            datasets: [{
-                data: values,
-                backgroundColor: backgroundColors,
-                borderColor: '#fff',
-                borderWidth: 1
-            }]
-        },
-        options: {
-            responsive: true,
-            maintainAspectRatio: false,
-            plugins: {
-                legend: {
-                    display: false // 隐藏默认图例
-                },
-                tooltip: {
-                    callbacks: {
-                        label: function(context) {
-                            let label = context.label || '';
-                            if (label) {
-                                label += ': ';
+        const labels = Object.keys(categoriesDistribution);
+        const values = Object.values(categoriesDistribution);
+        
+        // 确保所有值都是数字
+        const numericValues = values.map(val => Number(val) || 0);
+        
+        const backgroundColors = generateRandomColors(labels.length);
+
+        currentChart = new Chart(ctx, {
+            type: 'pie',
+            data: {
+                labels: labels,
+                datasets: [{
+                    data: numericValues,
+                    backgroundColor: backgroundColors,
+                    borderColor: '#fff',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        display: false // 隐藏默认图例
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                let label = context.label || '';
+                                if (label) {
+                                    label += ': ';
+                                }
+                                if (context.parsed !== null) {
+                                    label += context.parsed;
+                                }
+                                return label;
                             }
-                            if (context.parsed !== null) {
-                                label += context.parsed;
-                            }
-                            return label;
                         }
                     }
                 }
             }
-        }
-    });
+        });
 
-    // 生成自定义图例
-    generateCustomLegend(labels, values, backgroundColors);
+        // 生成自定义图例
+        generateCustomLegend(labels, numericValues, backgroundColors);
+    } catch (error) {
+        console.error('饼状图渲染失败:', error);
+        document.getElementById('categoryChart').innerHTML = '<p style="text-align: center; color: var(--text-secondary);">图表加载失败</p>';
+    }
 }
 
 // 生成自定义图例
@@ -695,22 +713,53 @@ function generateRandomColors(num) {
 
 // 渲染词云图
 function renderWordCloud(timestamp) {
-    const wordcloudImageDiv = document.getElementById('wordcloudImage');
-    // 假设词云图片命名规则为 wordcloud_YYYYMMDD_HHMMSS.png
-    // 或者直接使用 news_crawler.py 生成的 wordcloud.png
-    const wordcloudPath = `word_cloud/wordcloud_${timestamp.replace(/[-T:]/g, '')}.png`;
-    
-    // 检查文件是否存在，如果不存在则使用默认的 wordcloud.png
-    // 实际部署时，可能需要后端接口来确认文件是否存在
-    const img = new Image();
-    img.onload = () => {
-        wordcloudImageDiv.innerHTML = `<img src="${wordcloudPath}" alt="新闻词云">`;
-    };
-    img.onerror = () => {
-        // 如果带时间戳的词云不存在，尝试加载默认的 wordcloud.png
-        wordcloudImageDiv.innerHTML = `<img src="word_cloud/wordcloud.png" alt="新闻词云">`;
-    };
-    img.src = wordcloudPath;
+    try {
+        const wordcloudImageDiv = document.getElementById('wordcloudImage');
+        if (!wordcloudImageDiv) {
+            console.error('词云图容器元素未找到');
+            return;
+        }
+
+        // 验证时间戳格式
+        if (!timestamp || typeof timestamp !== 'string') {
+            console.warn('词云图时间戳格式不正确');
+            timestamp = new Date().toISOString().replace(/[-T:]/g, '').split('.')[0];
+        }
+
+        // 假设词云图片命名规则为 wordcloud_YYYYMMDD_HHMMSS.png
+        // 或者直接使用 news_crawler.py 生成的 wordcloud.png
+        const wordcloudPath = `word_cloud/wordcloud_${timestamp.replace(/[-T:]/g, '')}.png`;
+        
+        // 显示加载状态
+        wordcloudImageDiv.innerHTML = '<p style="text-align: center; color: var(--text-secondary);">加载词云图...</p>';
+        
+        // 检查文件是否存在，如果不存在则使用默认的 wordcloud.png
+        // 实际部署时，可能需要后端接口来确认文件是否存在
+        const img = new Image();
+        img.onload = () => {
+            wordcloudImageDiv.innerHTML = `<img src="${wordcloudPath}" alt="新闻词云" style="max-width: 100%; height: auto;">`;
+        };
+        img.onerror = () => {
+            // 如果带时间戳的词云不存在，尝试加载默认的 wordcloud.png
+            const defaultPath = 'word_cloud/wordcloud.png';
+            const fallbackImg = new Image();
+            fallbackImg.onload = () => {
+                wordcloudImageDiv.innerHTML = `<img src="${defaultPath}" alt="新闻词云" style="max-width: 100%; height: auto;">`;
+            };
+            fallbackImg.onerror = () => {
+                wordcloudImageDiv.innerHTML = '<p style="text-align: center; color: var(--text-secondary);">词云图加载失败</p>';
+                console.error('词云图加载失败，路径：', wordcloudPath, '和', defaultPath);
+            };
+            fallbackImg.src = defaultPath;
+        };
+        img.src = wordcloudPath;
+    } catch (error) {
+        console.error('词云图渲染失败:', error);
+        const wordcloudImageDiv = document.getElementById('wordcloudImage');
+        if (wordcloudImageDiv) {
+            wordcloudImageDiv.innerHTML = '<p style="text-align: center; color: var(--text-secondary);">词云图加载失败</p>';
+        }
+    }
 }
 
 // 刷新新闻 (重新加载最新数据)
@@ -732,26 +781,12 @@ function toggleTheme() {
     }
 }
 
-// 保存为PDF (需要HTML_to_PDF.py的支持)
-document.getElementById('savePdfBtn').addEventListener('click', async () => {
-    alert('保存为PDF功能需要后端支持，请确保HTML_to_PDF.py正在运行并监听请求。');
-    try {
-        const response = await fetch('/save-pdf', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({ html_content: document.documentElement.outerHTML })
-        });
-        if (response.ok) {
-            alert('PDF生成请求已发送。');
-        } else {
-            alert('PDF生成失败。');
-        }
-    } catch (error) {
-        console.error('保存PDF失败:', error);
-        alert('保存PDF失败，请检查后端服务是否运行。');
-    }
+// 保存为PDF (使用浏览器打印功能)
+document.getElementById('savePdfBtn').addEventListener('click', () => {
+    // 显示生成进度提示
+    alert('正在生成PDF，请等待打印对话框打开...');
+    // 使用浏览器打印功能生成PDF
+    window.print();
 });
 
 // 历史数据选择器事件监听
